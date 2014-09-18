@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    <title>php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    
+    <script type="text/javascript" async="" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44"></script><script type="text/javascript" async="" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/ga.js"></script><script type="text/javascript" async="" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/quant.js"></script><script type="text/javascript" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/all.css">
+    
+    <meta name="relativepagescore" content="105555">
+    <link rel="canonical" href="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow.htm">
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;CodeIgniter Setting cookies, cookies not setting&#39;" href="http://stackoverflow.com/feeds/question/11205307">
+    <script type="text/javascript">
+        
+        StackExchange.ready(function () {
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:11205307});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '11205307');
+            
+                
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1361395234,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","enableSocialMediaInSharePopup":true},"user":{"fkey":"8d23e5a12f9ac9573b17dd8767110972","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"c862bf93b3ec","js/moderator.js":"3007e1fb015b","js/full-anon.js":"c953c5a7771c","js/full.js":"485a725bd4b6","js/wmd.js":"87dca3845cc5","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"fc9fb0517db2","js/tageditor.js":"450c9e8426fc","js/tageditornew.js":"f12653fbfd29","js/inline-tag-editing.js":"dd9274b70e5e","js/revisions.js":"7273bb714bba","js/review.js":"02779bd8445c","js/tagsuggestions.js":"c019341b234d","js/post-validation.js":"d303b0460fb6"});
+        
+    </script>
+
+
+    <script type="text/javascript">
+        StackExchange.using(
+            "gps",
+            function () {
+                StackExchange.gps.init(false);
+            }
+        );
+    </script>
+
+<script async="" type="text/javascript" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/full-anon.js"></script><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><script async="" type="text/javascript" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/prettify-full.js"></script><script type="text/javascript" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/adFeedback.js"></script><link rel="stylesheet" href="http://static.adzerk.net/Extensions/adFeedback.css"><link href="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/sidebar.css" type="text/css" rel="stylesheet"></head>
+<body class="question-page">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header">
+            <div id="portalLink">
+                <a class="genu" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+
+
+
+
+
+
+
+
+
+<span id="hlinks-user">
+
+</span>
+<span id="hlinks-nav">
+                   <a href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f11205307%2fcodeigniter-setting-cookies-cookies-not-setting">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com/">careers 2.0</a>
+
+ <span class="lsep">|</span>
+
+</span>
+<span id="hlinks-custom">
+        <a href="http://chat.stackoverflow.com/">chat</a>
+
+ <span class="lsep">|</span>
+            <a href="http://meta.stackoverflow.com/">meta</a>
+
+ <span class="lsep">|</span>
+        <a href="http://stackoverflow.com/about">about</a>
+
+ <span class="lsep">|</span>
+    <a href="http://stackoverflow.com/faq">faq</a>
+
+</span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <div>
+                        <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="240" size="28" value="">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">Stack Overflow</a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Article">
+<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<div id="question-header">
+    <h1 itemprop="name"><a href="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow.htm" class="question-hyperlink">CodeIgniter Setting cookies, cookies not setting</a></h1>
+</div>
+<div id="mainbar">
+
+
+
+<div class="question" data-questionid="11205307" id="question">
+    
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1"><a href="http://engine.adzerk.net/r?e=eyJ0cyI6MTM2MTM5NTIzOTcwMCwiYXYiOjQxNCwiYXQiOjQsImNtIjoyOTExLCJjaCI6MTE3OCwiY3IiOjU5MjEsImRtIjoxLCJmYyI6MTAxODYsImZsIjo3NDcyLCJrdyI6InBocCxjb2RlaWduaXRlciIsIm53IjoyMiwicmYiOiJodHRwczovL3d3dy5nb29nbGUuY28uaW4vIiwicnYiOjAsInByIjoxNjA0LCJzdCI6ODI3Nywiem4iOjQzLCJkaSI6ImJmYzk1M2Y0ODVkMjRiNmRiMzBjYWM3NTgyY2NlMDQ2IiwidXIiOiJodHRwOi8vY2FyZWVycy5zdGFja292ZXJmbG93LmNvbS8ifQ&s=EK9FzrBSh3iT6AJJ0x_ft08dF3U" rel="nofollow" target="_blank" title=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/9241eb4107b24c588c0ca0042534c03e.png" title="" alt="" border="0" width="728" height="90"></a><div class="adzerk-vote-controls" style="display: none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li></ul><a href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/i.gif"></div>
+
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11205307">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful (click again to undo)">down vote</a>
+    
+    <a class="star-off" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b></b></div>   
+
+ 
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="description">
+        <p>I've searched here and on google before asking this cause I see its a popular question, but the answers I have found I have tried, and still I am failing.</p>
+
+<p>This is my attempt to set the cookies (note the helper is autoloaded)</p>
+
+<pre class="lang-php prettyprint prettyprinted" style=""><code><span class="pln">$longlife </span><span class="pun">=</span><span class="pln"> </span><span class="lit">60</span><span class="pun">*</span><span class="lit">60</span><span class="pun">*</span><span class="lit">24</span><span class="pun">*</span><span class="lit">60</span><span class="pun">;</span><span class="pln"> </span><span class="com">//60 days</span><span class="pln">
+$shortlife </span><span class="pun">=</span><span class="pln"> </span><span class="lit">60</span><span class="pun">*</span><span class="lit">60</span><span class="pun">*</span><span class="lit">24</span><span class="pun">*</span><span class="lit">10</span><span class="pun">;</span><span class="pln"> </span><span class="com">//10 days</span><span class="pln">
+$this</span><span class="pun">-&gt;</span><span class="pln">input</span><span class="pun">-&gt;</span><span class="pln">set_cookie</span><span class="pun">(</span><span class="str">'AutoRemember'</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">.</span><span class="str">'::'</span><span class="pun">.</span><span class="pln">$hashbrown</span><span class="pun">,</span><span class="pln"> $shortlife</span><span class="pun">,</span><span class="pln"> </span><span class="str">'.example.com'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">);</span><span class="pln">
+$this</span><span class="pun">-&gt;</span><span class="pln">input</span><span class="pun">-&gt;</span><span class="pln">set_cookie</span><span class="pun">(</span><span class="str">'LongRemember'</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">.</span><span class="str">'::'</span><span class="pun">.</span><span class="pln">$hashbrown</span><span class="pun">,</span><span class="pln"> $longlife</span><span class="pun">,</span><span class="pln"> </span><span class="str">'.example.com'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">);</span></code></pre>
+
+<p>when I attempt to do a var_dump on '$this-&gt;input-&gt;cookie()` i get bool false as an output, meaning no cookies found. This is the first time i've tried using cookies with CI so the issue is beyond me at the moment. </p>
+
+<p>also note I changed the real domain in the example above to example.com as I don't want the domain to show up in searches right now.</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/php" class="post-tag" title="show questions tagged &#39;php&#39;" rel="tag">php</a> <a href="http://stackoverflow.com/questions/tagged/codeigniter" class="post-tag" title="show questions tagged &#39;codeigniter&#39;" rel="tag">codeigniter</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/q/11205307" title="short permalink to this question" class="short-link" id="link-post-11205307">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11205307/edit" class="suggest-edit-post" title="">improve this question</a></div>            </td>
+    <td class="post-signature owner">
+        
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                    asked
+ <span title="2012-06-26 10:25:18Z" class="relativetime">Jun 26 '12 at 10:25</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/768392/chris"><div class=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/b43bbab9d16d030a8744f17ca9c1da8d" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/768392/chris">chris</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">3,637</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="57 bronze badges"><span class="badge3"></span><span class="badgecount">57</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11205307" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>            </tbody></table>    
+</div>
+
+
+    
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div class="subheader answers-subheader">
+            <h2>
+                    4 Answers
+            </h2>
+            <div id="tabs">
+                <a href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+<a href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+<a class="youarehere" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+
+            </div>
+        </div>    
+    </div>    
+
+
+
+
+  
+<a name="11214535"></a>
+<div id="answer-11214535" class="answer accepted-answer" data-answerid="11214535">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11214535">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+            <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>Ok, I figured out my problem. Maybe this will help someone else down the road.</p>
+
+<p>In your CI config.php there are specific settings for cookies/sessions one of those settings is a prefix for cookies. Apparently if that setting is not set eg <code>=''</code> then somewhere down the line the cookie breaks silently. However if you have it set and more so if you forgot you set it when you configured CI initially when you set a cookie.</p>
+
+<p><code>$this-input-&gt;set_cookie('myCookie');</code></p>
+
+<p>and you had a prefix of 'fox' for example..</p>
+
+<p>and you went to go looking for your cookie </p>
+
+<p><code>$this-&gt;input-&gt;cookie('myCookie');</code></p>
+
+<p>you will get the equivlant of <code>bool(false)</code> however if you go looking for your cookie like</p>
+
+<p><code>$this-&gt;input-&gt;cookie('foxmyCookie');</code></p>
+
+<p>you will actually get the cookie.</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/11214535" title="short permalink to this answer" class="short-link" id="link-post-11214535">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11214535/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature owner">   
+       
+
+    
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                    answered
+ <span title="2012-06-26 19:23:07Z" class="relativetime">Jun 26 '12 at 19:23</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/768392/chris"><div class=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/b43bbab9d16d030a8744f17ca9c1da8d" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/768392/chris">chris</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">3,637</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="57 bronze badges"><span class="badge3"></span><span class="badgecount">57</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11214535" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+   
+    
+    </tbody></table>
+</div>
+        <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk3"><a href="http://engine.adzerk.net/r?e=eyJ0cyI6MTM2MTM5NTIzOTcwMiwiYXYiOjQxNCwiYXQiOjQsImNtIjo4NDcsImNoIjoxMTc4LCJjciI6NTkyMywiZG0iOjEsImZjIjo4ODA5LCJmbCI6MjQ0NCwia3ciOiJwaHAsY29kZWlnbml0ZXIiLCJudyI6MjIsInJmIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvLmluLyIsInJ2IjowLCJwciI6MTU2OCwic3QiOjgyNzcsInpuIjo0NCwiZGkiOiI5OTEwNzA0ZGYyNjQ0OTExYTA5YTdmMzJlYWNlODU5MyIsInVyIjoiaHR0cDovL2NhcmVlcnMuc3RhY2tvdmVyZmxvdy5jb20vIn0&s=PNfiD3bn9zg1oxka8ZWoqgN4Jog" rel="nofollow" target="_blank" title=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/46a9844d6e504212a85bc72ddd7dd829.png" title="" alt="" border="0" width="728" height="90"></a><div class="adzerk-vote-controls" style="display: none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li></ul><a href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/i(1).gif"></div>
+
+
+
+  
+<a name="11205381"></a>
+<div id="answer-11205381" class="answer" data-answerid="11205381">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11205381">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>From the docs:</p>
+
+<pre class="lang-php prettyprint prettyprinted" style=""><code><span class="typ">This</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> identical to the post </span><span class="kwd">function</span><span class="pun">,</span><span class="pln"> only it fetches cookie data</span><span class="pun">:</span><span class="pln">
+$this</span><span class="pun">-&gt;</span><span class="pln">input</span><span class="pun">-&gt;</span><span class="pln">cookie</span><span class="pun">(</span><span class="str">'some_data'</span><span class="pun">,</span><span class="pln"> TRUE</span><span class="pun">);</span></code></pre>
+
+<p>Well, as this suggests, you will need to add the name of the cookie to get it. Try outputting <code>$this-&gt;input-&gt;cookie('AutoRemember')</code> </p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/11205381" title="short permalink to this answer" class="short-link" id="link-post-11205381">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11205381/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                    answered
+ <span title="2012-06-26 10:29:32Z" class="relativetime">Jun 26 '12 at 10:29</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/388350/shubham"><div class=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/21e6d25c5b79fb68c0754672a5a33db1" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/388350/shubham">Shubham</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">2,021</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="13 silver badges"><span class="badge2"></span><span class="badgecount">13</span></span><span title="33 bronze badges"><span class="badge3"></span><span class="badgecount">33</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11205381" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-14710623" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">tried that at first, tried it again just now for sanity sake, stil bool(false)</span> –&nbsp;<a href="http://stackoverflow.com/users/768392/chris" title="3637 reputation" class="comment-user owner">chris</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14710623, 11205381)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14710623_11205381"><span title="2012-06-26 10:35:21Z" class="relativetime-clean">Jun 26 '12 at 10:35</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-14710688" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">could see by document.cookie method if the cookies are being set (JS)?</span> –&nbsp;<a href="http://stackoverflow.com/users/388350/shubham" title="2021 reputation" class="comment-user">Shubham</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14710688, 11205381)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14710688_11205381"><span title="2012-06-26 10:37:18Z" class="relativetime-clean">Jun 26 '12 at 10:37</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-14720799" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">walked away for the night to come back with a fresh head, and yea.. nothing I do is setting cookie. If I use PHP's native command for setting cookies I run into a header issue as I am also using sessions for other needs.</span> –&nbsp;<a href="http://stackoverflow.com/users/768392/chris" title="3637 reputation" class="comment-user owner">chris</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14720799, 11205381)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14720799_11205381"><span title="2012-06-26 16:12:04Z" class="relativetime-clean">Jun 26 '12 at 16:12</span></a></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+   
+    
+    </tbody></table>
+</div>
+
+  
+<a name="11209794"></a>
+<div id="answer-11209794" class="answer" data-answerid="11209794">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11209794">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>I would recommend using CodeIgniter's Session Class instead.</p>
+
+<p><a href="http://codeigniter.com/user_guide/libraries/sessions.html" rel="nofollow">http://codeigniter.com/user_guide/libraries/sessions.html</a></p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/11209794" title="short permalink to this answer" class="short-link" id="link-post-11209794">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11209794/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+ <span title="2012-06-26 14:38:18Z" class="relativetime">Jun 26 '12 at 14:38</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/971795/marshall"><div class=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/d62f59aa61a18825a1594af9b489f9e0" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/971795/marshall">marshall</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">36</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11209794" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-14720352" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">I am, but tell me, how do I extend the session for 10+ days after the user has closed the browser initially or even restarted there computer? If thats possible with sessions I am all ears :-)</span> –&nbsp;<a href="http://stackoverflow.com/users/768392/chris" title="3637 reputation" class="comment-user owner">chris</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14720352, 11209794)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14720352_11209794"><span title="2012-06-26 15:56:14Z" class="relativetime-clean">Jun 26 '12 at 15:56</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-14748107" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">In the config.php file you can specify expiration. $config['sess_expiration'] = (60 * 60 * 24 * 7 * 2); In my case, I set the expiration for 2 weeks.</span> –&nbsp;<a href="http://stackoverflow.com/users/971795/marshall" title="36 reputation" class="comment-user">marshall</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14748107, 11209794)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14748107_11209794"><span title="2012-06-27 14:09:26Z" class="relativetime-clean">Jun 27 '12 at 14:09</span></a></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+   
+    
+    </tbody></table>
+</div>
+
+  
+<a name="11205696"></a>
+<div id="answer-11205696" class="answer" data-answerid="11205696">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11205696">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">-1</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text"><p>FYI, you can not set cookies for domain 'example.com' from within a domain (HTTP_HOST) with a different name like 'yoursite.com'. it is security issue, browsers will ignore it. check with mozilla firebug 'NET' tab the response headers, if the cookie exists, and not set , then i am right.</p>
+
+<p>secondly, after you set cookie, it will be available on the server (php) , only in next request, since current $_COOKIE still not updated. if CI implemented this differently, this is  wrong implementation of the concept.</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/11205696" title="short permalink to this answer" class="short-link" id="link-post-11205696">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11205696/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="http://stackoverflow.com/posts/11205696/revisions" title="show all edits to this post"><span title="2012-06-26 14:52:24Z" class="relativetime">Jun 26 '12 at 14:52</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+            
+        </div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+ <span title="2012-06-26 10:47:49Z" class="relativetime">Jun 26 '12 at 10:47</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/1478248/arty"><div class=""><img src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/84443b37e3e631db5c691baf97bbc170" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/1478248/arty">arty</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">59</span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11205696" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-14720314" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">"also note I changed the real domain in the above example...", and the page goes from one to another after the cookie should have been set, so I think I'm covered there.</span> –&nbsp;<a href="http://stackoverflow.com/users/768392/chris" title="3637 reputation" class="comment-user owner">chris</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14720314, 11205696)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14720314_11205696"><span title="2012-06-26 15:55:04Z" class="relativetime-clean">Jun 26 '12 at 15:55</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-14725175" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">missed this line with "also note..." , sorry.
+what about firebug??? do you see the cookies header in response or not ? and what you mean from one page to another ?</span> –&nbsp;<a href="http://stackoverflow.com/users/1478248/arty" title="59 reputation" class="comment-user">arty</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14725175, 11205696)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14725175_11205696"><span title="2012-06-26 18:52:22Z" class="relativetime-clean">Jun 26 '12 at 18:52</span></a></span><span class="edited-yes" title="this comment was edited 2 times"></span></div></td>
+    </tr>
+            
+    <tr id="comment-14725851" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">its ok, wasn't trying to be offensive either, after re-reading what I wrote initially, could have worded that better. Anyway however I found out what my issue was to one extent, still having a bit of trouble but I think at this point its logic based and not cookie specific. The problem as it was turned out that in the config you have settings for prefixing a cookie with something, if its left blank the cookies break in the background and never get set, if you have something set then your looking for that setting + what you called the cookie in the script, I wasn't looking for a prefix + name</span> –&nbsp;<a href="http://stackoverflow.com/users/768392/chris" title="3637 reputation" class="comment-user owner">chris</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14725851, 11205696)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14725851_11205696"><span title="2012-06-26 19:18:47Z" class="relativetime-clean">Jun 26 '12 at 19:18</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-14726211" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">thanks for clarifying. i remember one of my team members got crazy because of some CI cookie issue, may be this post will help others to avoid it in the future )</span> –&nbsp;<a href="http://stackoverflow.com/users/1478248/arty" title="59 reputation" class="comment-user">arty</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(14726211, 11205696)" href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#comment14726211_11205696"><span title="2012-06-26 19:33:31Z" class="relativetime-clean">Jun 26 '12 at 19:33</span></a></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+   
+    
+    </tbody></table>
+</div>
+    <a name="new-answer"></a>
+    <form id="post-form" action="http://stackoverflow.com/questions/11205307/answer/submit" method="post" class="post-form">
+        <h2 class="space">Your Answer</h2>
+
+
+
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'answer',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: true,
+            discardSelector: ".discard-answer"
+            ,immediatelyShowMarkdownHelp:true
+        });
+        
+
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101"></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="8d23e5a12f9ac9573b17dd8767110972">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+        <div style="position: relative;"> 
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                <td class="vm open-id-login">
+                    <a id="login-link" style="font-size: 200%; margin-left: 30px;" href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f11205307%2fcodeigniter-setting-cookies-cookies-not-setting">log in</a>
+                    <script type="text/javascript">
+                        StackExchange.ready(function () {
+                            StackExchange.helpers.onClickDraftSave('#login-link');
+                        });
+                    </script>
+                </td>
+                    <script type="text/javascript">
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+                <td class="orcell">
+                    <div class="orword">or</div>
+                    <div class="orline"></div>
+                </td>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input type="text" size="30" maxlength="30" value="" tabindex="105" style="opacity: 1; position: absolute; background-color: white; color: black; -webkit-text-fill-color: black; width: 209px; height: 16px; line-height: normal; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: start; border: 1px solid rgb(153, 153, 153);" class="actual-edit-overlay" disabled="disabled"><input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105" style="opacity: 0.4; z-index: 1; position: relative;" class="edit-field-overlayed">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input type="text" size="40" maxlength="100" value="" tabindex="106" style="opacity: 1; position: absolute; background-color: white; color: black; -webkit-text-fill-color: black; width: 269px; height: 16px; line-height: normal; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: start; border: 1px solid rgb(153, 153, 153);" class="actual-edit-overlay" disabled="disabled"><input id="m-address" name="m-address" type="text" size="40" maxlength="100" value="" tabindex="106" style="opacity: 0.4; z-index: 1; position: relative;" class="edit-field-overlayed">
+                    <span class="edit-field-overlay">required, but never shown</span>
+                </div>
+                    <div>
+                        <label for="home-page">Home Page</label>
+                        <input type="text" size="40" maxlength="200" value="" tabindex="107" style="opacity: 1; position: absolute; background-color: white; color: black; -webkit-text-fill-color: black; width: 269px; height: 16px; line-height: normal; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: start; border: 1px solid rgb(153, 153, 153);" class="actual-edit-overlay" disabled="disabled"><input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107" style="opacity: 0.4; z-index: 1; position: relative;" class="edit-field-overlayed">
+                    </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+        </div>
+           
+            <div class="form-submit cbt">
+            <input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+            <a href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting#" class="discard-answer dno">discard</a>
+    <p class="privacy-policy-agreement">
+        By posting your answer, you agree to the 
+        <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and 
+        <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.
+    </p>
+    <input type="hidden" name="legalLinksShown" value="1">
+        </div>
+    </form>
+
+
+
+        <h2 class="bottom-notice">
+                Not the answer you're looking for? 
+            Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/php" class="post-tag" title="show questions tagged &#39;php&#39;" rel="tag">php</a> <a href="http://stackoverflow.com/questions/tagged/codeigniter" class="post-tag" title="show questions tagged &#39;codeigniter&#39;" rel="tag">codeigniter</a> 
+                or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.
+        </h2>
+</div>
+</div>
+<div id="sidebar">
+
+
+
+     <script type="text/javascript">
+        window.showNewUser = true;
+
+            
+                (function(){
+                    var cs = window.sessionStorage && window.sessionStorage['tNewsletter'];
+                    var m = /:\/\/([^\/]*)/.exec(document.referrer);
+                    var h = {'www.reddit.com':1,'news.ycombinator.com':1};
+                    if(window.sessionStorage && (cs || (m && m.length == 2 && h[m[1]]))){
+                        showNewUser = false;
+                        StackExchange.ready(function(){
+                            StackExchange.newsletterAd.loader(m[1], cs);
+                        });
+                    }
+                    if (window.localStorage && showNewUser){
+                        var c = parseInt(localStorage['nuCounter'],10); 
+                        c = isNaN(c) ? 1 : c+1;
+                        window.localStorage['nuCounter'] = c; 
+                        showNewUser = c < 10;
+                    }
+                })()
+            
+     </script>
+    <div class="module newuser newuser-greeting" id="newuser-box" style="display:none;">
+        <h4>Hello World!</h4>
+        <div>
+            <p>This is a collaboratively edited question and answer site for <b>professional and enthusiast programmers</b>. It's 100% free, no registration required.</p>
+            <p class="ar">
+                    <a href="http://stackoverflow.com/about?mnu=1">about »</a>&nbsp;&nbsp;&nbsp;
+                <a href="http://stackoverflow.com/faq?mnu=1">faq »</a>
+            </p>
+        </div>
+    </div>
+     <script type="text/javascript">
+        if (showNewUser) {
+            document.getElementById('newuser-box').style.display = '';
+        }
+     </script>
+        <div class="module question-stats">
+        <p class="label-key">tagged</p>
+        <div class="tagged"><a href="http://stackoverflow.com/questions/tagged/php" class="post-tag" title="show questions tagged &#39;php&#39;" rel="tag">php</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">346813</span></span><br>
+<a href="http://stackoverflow.com/questions/tagged/codeigniter" class="post-tag" title="show questions tagged &#39;codeigniter&#39;" rel="tag">codeigniter</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">16667</span></span><br>
+</div>
+        <table id="qinfo">
+            <tbody><tr>
+                <td><p class="label-key">asked</p></td>
+                <td style="padding-left:10px"><p class="label-key" title="2012-06-26 10:25:18Z"><b>7 months ago</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="label-key">viewed</p></td>
+
+                <td style="padding-left:10px">
+                    <p class="label-key">
+                        <b>310 times</b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><p class="label-key">active</p></td>
+                <td style="padding-left:10px"><p class="label-key"><b><a href="http://stackoverflow.com/questions/11205307/codeigniter-setting-cookies-cookies-not-setting?lastactivity" class="lastactivity-link" title="2012-06-26 19:23:07Z">7 months ago</a></b></p></td>
+            </tr>
+        </tbody></table>
+    </div>
+        
+                <script type="text/javascript">
+                var scriptSrc = "http://engine.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44?keywords=php,codeigniter";
+                if (document.referrer) {
+                    if (/\?/.test(scriptSrc))
+                        scriptSrc += "&";
+                    else
+                        scriptSrc += "?";
+                    scriptSrc += "xReferrer=" + document.referrer;
+                }
+                StackExchange.ready(function () {
+                    var z = document.createElement("script");
+                    z.type = "text/javascript";
+                    z.async = "true";
+                    z.src = scriptSrc;
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(z, s);
+                });
+            </script>
+        <div class="everyonelovesstackoverflow" id="adzerk2"><div id="careersadsdoublehigh" style="display:none;"></div><img height="0px" width="0px" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/i(2).gif"></div>
+    <div id="hireme"> <a href="http://careers.stackoverflow.com/jobs?a=24" class="top" target="_blank"></a> <ul class="jobs"> <li> <a href="http://careers.stackoverflow.com/jobs/30055/datenbank-entwickler-m-w-c-und-c-plus-plus-abas-software-ag?a=zvB7DsA" target="_blank" title="Datenbank-Entwickler (m/w) C und C++ at ABAS Software AG. Click to learn more."> Datenbank-Entwickler (m/w) C und C++<br> <span class="company">ABAS Software AG</span> <span class="location">Karlsruhe, Germany</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/30052/java-struts-spring-web-developers-a-saas-twelve77-software-studios?a=zvoDhJK" target="_blank" title="Java, struts, spring web developers for a SaaS product company at Twelve77 Software Studios Pvt. Click to learn more."> Java, struts, spring web developers for a SaaS product…<br> <span class="company">Twelve77 Software Studios Pvt</span> <span class="location">Bangalore, India</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/23572/mid-and-senior-net-mvc-c-sharp-developers-required-perfect-channel?a=rQHDPgs" target="_blank" title="Mid and Senior .NET MVC c# Developers required (Talented and enthusiastic!) at Perfect Channel. Click to learn more."> Mid and Senior .NET MVC c# Developers required (Talented…<br> <span class="company">Perfect Channel</span> <span class="location">London, United Kingdom</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/28748/python-dev-a-profitable-saas-startup-recruiterbox?a=xXSkpTG" target="_blank" title="Python Dev for a profitable SaaS startup at Recruiterbox. Click to learn more."> Python Dev for a profitable SaaS startup<br> <span class="company">Recruiterbox</span> <span class="location">Bangalore, India</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/30325/software-development-engineer-data-mining-text-amazon?a=zPnmLni" target="_blank" title="Software Development Engineer-Data Mining/Text Analysis/Machine Learning at Amazon. Click to learn more."> Software Development Engineer-Data Mining/Text Analysis…<br> <span class="company">Amazon</span> <span class="location">Seattle, WA / relocation</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/29812/experienced-python-developer-technical-lead-hipship-logistics?a=zdODCg0" target="_blank" title="Experienced Python Developer for Technical Lead Position at Hipship Logistics. Click to learn more."> Experienced Python Developer for Technical Lead Position<br> <span class="company">Hipship Logistics</span> <span class="location">Bangalore, India</span> </a> </li> </ul> <img alt="" class="impression" src="./php - CodeIgniter Setting cookies, cookies not setting - Stack Overflow_files/zvB7DsA-zvoDhJK-rQHDPgs-xXSkpTG-zPnmLni-zdODCg0-24" style="display:none"></div>
+
+
+
+      
+    
+    <div class="module sidebar-related">
+        <h4 id="h-related">Related</h4>
+        <div class="related" data-tracker="rq=1">
+            <div class="spacer">
+<a href="http://stackoverflow.com/questions/2058225/codeigniter-cookies?rq=1" class="question-hyperlink">Codeigniter cookies</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/2060804/codeigniter-cookies-help?rq=1" class="question-hyperlink">Codeigniter Cookies Help</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/4761065/codeigniter-sessions-and-cookies?rq=1" class="question-hyperlink">codeigniter sessions and cookies</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/5783595/codeigniter-session-cookie-domain?rq=1" class="question-hyperlink">CodeIgniter session cookie domain</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6095862/remember-password-by-setting-cookie?rq=1" class="question-hyperlink">Remember password by setting cookie</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6290502/codeigniter-cookie-expiry-problem?rq=1" class="question-hyperlink">codeigniter cookie expiry problem</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6635536/prevent-codeigniter-session-library-from-sending-set-cookie-header-parameter-if?rq=1" class="question-hyperlink">Prevent codeigniter session library from sending set-cookie header parameter if autoloaded</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6879798/trying-to-get-session-id-from-cookie-in-codeigniter-but?rq=1" class="question-hyperlink">Trying to get session ID from cookie in Codeigniter but…</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/7779764/i-cant-use-cookie-in-codeigniter?rq=1" class="question-hyperlink">I can't use cookie in Codeigniter</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8201570/codeigniter-cookie-wont-set-but-session-is-working?rq=1" class="question-hyperlink">CodeIgniter Cookie won't set but Session is working?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8464545/codeigniter-cookie-issue?rq=1" class="question-hyperlink">Codeigniter Cookie Issue</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8615457/cannot-get-cookie?rq=1" class="question-hyperlink">Cannot get Cookie</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8622035/php-cookies-not-being-set?rq=1" class="question-hyperlink">PHP Cookies not being set</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/9069521/cant-set-cookie-inside-construct-in-codeigniter?rq=1" class="question-hyperlink">Can't set cookie inside construct in codeigniter</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/9714050/remember-me-functionality-in-codeigniter?rq=1" class="question-hyperlink">remember me functionality in codeigniter</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/10383450/codeigniter-no-cookies-to-be-set-unless-agreed-to-by-the-visitor?rq=1" class="question-hyperlink">CodeIgniter - No cookies to be set unless agreed to by the visitor</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/10546478/cant-set-cookie-correctly?rq=1" class="question-hyperlink">can't set cookie correctly</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/10635300/cookie-automatically-destroyed-when-browser-is-closed?rq=1" class="question-hyperlink">Cookie automatically destroyed when browser is closed</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/10644413/codeigniter-cookies-not-setting?rq=1" class="question-hyperlink">Codeigniter cookies not setting?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/11211989/codeigniter-cookie-helper-combined-with-session-helper?rq=1" class="question-hyperlink">codeigniter cookie helper combined with session helper</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/12446834/setting-cookies-not-working-in-codeigniter?rq=1" class="question-hyperlink">Setting cookies not working in CodeIgniter</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/13084512/codeigniter-cookie-wont-set?rq=1" class="question-hyperlink">Codeigniter cookie won't set</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/13450118/cookie-not-setting-properly-in-php-codeigniter?rq=1" class="question-hyperlink">cookie not setting properly in php codeigniter?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/13930774/codeigniter-deleting-my-cookies?rq=1" class="question-hyperlink">CodeIgniter deleting my cookies</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/14113422/what-is-cookie-with-key-ebnewbandwidth-where-is-it-set?rq=1" class="question-hyperlink">What is cookie with key “ebNewBandWidth”? Where is it set?</a>
+</div>
+
+        </div>
+    </div>
+        <div class="everyonelovesstackoverflow" id="adzerk3">
+        </div>
+
+
+</div>
+
+<div id="feed-link">
+    <div id="feed-link-text"><a href="http://stackoverflow.com/feeds/question/11205307" title="feed of this question and its answers"><span class="feed-icon"></span>question feed</a></div>
+</div>
+<script type="text/javascript">
+StackExchange.ready(function(){$.get('/posts/11205307/ivc/451d');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/11205307/ivc/451d" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">lang-php</div></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                    <a href="http://stackoverflow.com/about">about</a> |
+                <a href="http://stackoverflow.com/faq">faq</a> |
+                <a href="http://blog.stackexchange.com/?blb=1">blog</a> |
+                    <a href="http://chat.stackoverflow.com/">chat</a> |
+                <a href="http://data.stackexchange.com/">data</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> |
+                <a href="http://stackexchange.com/about/hiring">jobs</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+
+                <a onclick="StackExchange.switchMobile(&#39;on&#39;, &#39;/questions/11205307/codeigniter-setting-cookies-cookies-not-setting&#39;)">mobile</a> |
+
+                <b><a href="http://stackoverflow.com/help">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                <div id="footer-sites">
+                    
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://stackoverflow.com/">stackoverflow.com</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://stackapps.com/">api/apps</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://careers.stackoverflow.com/">careers 2.0</a>&nbsp; 
+                        <span style="color:#E8272C;font-size:140%">■</span>&nbsp;<a href="http://serverfault.com/">serverfault.com</a>&nbsp; 
+                        <span style="color:#00AFEF;font-size:140%">■</span>&nbsp;<a href="http://superuser.com/">superuser.com</a>&nbsp; 
+                        <span style="color:#969696;font-size:140%">■</span>&nbsp;<a href="http://meta.stackoverflow.com/">meta</a>&nbsp; 
+                        <span style="color:#46937D;font-size:140%">■</span>&nbsp;<a href="http://area51.stackexchange.com/">area&nbsp;51</a>&nbsp; 
+                        <span style="color:#C0D0DC;font-size:140%">■</span>&nbsp;<a href="http://webapps.stackexchange.com/">webapps</a>&nbsp; 
+                        <span style="color:#000000;font-size:140%">■</span>&nbsp;<a href="http://gaming.stackexchange.com/">gaming</a>&nbsp; 
+                        <span style="color:#dd4814;font-size:140%">■</span>&nbsp;<a href="http://askubuntu.com/">ubuntu</a>&nbsp; 
+                        <span style="color:#9ce4fe;font-size:140%">■</span>&nbsp;<a href="http://webmasters.stackexchange.com/">webmasters</a>&nbsp; 
+                        <span style="color:#cf4d3f;font-size:140%">■</span>&nbsp;<a href="http://cooking.stackexchange.com/">cooking</a>&nbsp; 
+                        <span style="color:#f4f28d;font-size:140%">■</span>&nbsp;<a href="http://gamedev.stackexchange.com/">game development</a>&nbsp; 
+                        <span style="color:#0f3559;font-size:140%">■</span>&nbsp;<a href="http://math.stackexchange.com/">math</a>&nbsp; 
+                        <span style="color:#f2f2f2;font-size:140%">■</span>&nbsp;<a href="http://photo.stackexchange.com/">photography</a>&nbsp; 
+                        <span style="color:#037187;font-size:140%">■</span>&nbsp;<a href="http://stats.stackexchange.com/">stats</a>&nbsp; 
+                        <span style="color:#f1e7cc;font-size:140%">■</span>&nbsp;<a href="http://tex.stackexchange.com/">tex</a>&nbsp; 
+                        <span style="color:#e1cdae;font-size:140%">■</span>&nbsp;<a href="http://english.stackexchange.com/">english</a>&nbsp; 
+                        <span style="color:#a2d9f6;font-size:140%">■</span>&nbsp;<a href="http://cstheory.stackexchange.com/">theoretical cs</a>&nbsp; 
+                        <span style="color:#1b3e6c;font-size:140%">■</span>&nbsp;<a href="http://programmers.stackexchange.com/">programmers</a>&nbsp; 
+                        <span style="color:#293a5d;font-size:140%">■</span>&nbsp;<a href="http://unix.stackexchange.com/">unix</a>&nbsp;
+                        <span style="color:#bec0cb;font-size:140%">■</span>&nbsp;<a href="http://apple.stackexchange.com/">apple</a>&nbsp;
+                        <span style="color:#939185;font-size:140%">■</span>&nbsp;<a href="http://wordpress.stackexchange.com/">wordpress</a>&nbsp;
+                        <span style="color:#ebf5f5;font-size:140%">■</span>&nbsp;<a href="http://physics.stackexchange.com/">physics</a>&nbsp;
+                        <span style="color:#4176ab;font-size:140%">■</span>&nbsp;<a href="http://diy.stackexchange.com/">home&nbsp;improvement</a>&nbsp;
+                        <span style="color:#d1d8d7;font-size:140%">■</span>&nbsp;<a href="http://gis.stackexchange.com/">gis</a>&nbsp;
+                        <span style="color:#e5e2d3;font-size:140%">■</span>&nbsp;<a href="http://electronics.stackexchange.com/">electrical&nbsp;engineering</a>&nbsp;
+                        <span style="color:#a4c639;font-size:140%">■</span>&nbsp;<a href="http://android.stackexchange.com/">android</a>&nbsp;
+                        <span style="color:#2e4e60;font-size:140%">■</span>&nbsp;<a href="http://security.stackexchange.com/">security</a>&nbsp;
+                        <span style="color:#45bcb5;font-size:140%">■</span>&nbsp;<a href="http://bicycles.stackexchange.com/">bicycles</a>&nbsp;
+                        <span style="color:#00adee;font-size:140%">■</span>&nbsp;<a href="http://dba.stackexchange.com/">dba</a>&nbsp;
+                        <span style="color:#2edaf0;font-size:140%">■</span>&nbsp;<a href="http://drupal.stackexchange.com/">drupal</a>&nbsp;
+                        <span style="color:#213951;font-size:140%">■</span>&nbsp;<a href="http://sharepoint.stackexchange.com/">sharepoint</a>&nbsp;
+                        <span style="color:#73abb3;font-size:140%">■</span>&nbsp;<a href="http://scifi.stackexchange.com/">scifi&nbsp;&amp;&nbsp;fantasy</a>&nbsp;
+                        <span style="color:#23629F;font-size:140%">■</span>&nbsp;<a href="http://ux.stackexchange.com/">user&nbsp;experience</a>&nbsp;
+                        <span style="color:#faff72;font-size:140%">■</span>&nbsp;<a href="http://skeptics.stackexchange.com/">skeptics</a>&nbsp;
+                        <span style="color:#623121;font-size:140%">■</span>&nbsp;<a href="http://rpg.stackexchange.com/">rpg</a>&nbsp;
+                        <span style="color:#e4be88;font-size:140%">■</span>&nbsp;<a href="http://judaism.stackexchange.com/">judaism</a>&nbsp;
+                        <span style="color:#ffecb1;font-size:140%">■</span>&nbsp;<a href="http://mathematica.stackexchange.com/">mathematica</a>&nbsp;
+                        <span style="color:#1b8598;font-size:140%">■</span>&nbsp;<a href="http://travel.stackexchange.com/">travel</a>&nbsp;
+                </div>
+            </div>
+            <div id="footer-flair">
+                <a class="peer1" href="http://www.peer1.com/stackoverflow"></a>  
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2013.2.20.514</div>
+                        </div>
+            <div id="copyright">
+                site design / logo © 2013 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|php|codeigniter|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script>
+    <script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>    
+    
+
+</body></html>

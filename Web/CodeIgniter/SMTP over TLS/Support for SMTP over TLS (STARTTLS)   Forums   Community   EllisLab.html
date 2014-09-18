@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://ellislab.com/forums/viewthread/158882/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" async="" src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/ga.js"></script><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script><title>Support for SMTP over TLS (STARTTLS) / Forums / Community / EllisLab</title>
+		
+		<meta name="description" content="Coummity Forums">
+		<meta name="author" content="James A. Mathias, CCO EllisLab">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+		<link href="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/common.css" type="text/css" rel="stylesheet">
+	  	<link href="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/theme.css" type="text/css" rel="stylesheet">
+		
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="expires" content="-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="robots" content="all">
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://ellislab.com/forums/atom/58/">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://ellislab.com/forums/rss/58/">
+
+		<script type="text/javascript">
+<!--
+
+function navHover(which)
+{
+	if (document.getElementById(which.id))
+	{
+		cur = document.getElementById(which.id).className;
+
+		if (cur == 'buttonLarge')
+		{
+			document.getElementById(which.id).className = 'buttonLargeHover'
+		}
+		else if (cur == 'buttonSmall')
+		{
+			document.getElementById(which.id).className = 'buttonSmallHover'
+		}
+	}
+}
+
+function navReset(which)
+{
+	if (document.getElementById(which.id))
+	{
+		cur = document.getElementById(which.id).className;
+
+		if (cur == 'buttonLargeHover')
+		{
+			document.getElementById(which.id).className = 'buttonLarge'
+		}
+		else if (cur == 'buttonSmallHover')
+		{
+			document.getElementById(which.id).className = 'buttonSmall'
+		}
+	}
+}
+
+
+function navJump(where)
+{
+	window.location=where;
+}
+-->
+</script><style type="text/css"></style>
+		
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-12953034-1']);
+		  _gaq.push(['_setDomainName', 'ellislab.com']);
+		  _gaq.push(['_setCustomVar', 1, 'Category', 'Forums',3]);
+		  _gaq.push(['_setCustomVar', 2, 'Product', 'EllisLab',3]);
+		  _gaq.push(['_setCustomVar', 3, 'Member Group', '3',3]);
+		  _gaq.push(['_trackPageview']);
+
+		(function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+
+		</script>
+	</head>
+	<body class="forum">
+		<header id="up-top">
+						<nav class="main-nav">
+				<div class="column-wrap">
+					<div class="column colspan-16">
+						<ul class="collapsed-nav">
+							<li class="menu-ico"><a href="http://ellislab.com/#" title="View Menu"><img src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/menu-ico.gif" alt="menu icon"></a></li>
+							<nav class="primary-nav">
+								<ul>
+									<li class="products-item"><a href="http://ellislab.com/#" title="View Products">products</a></li>
+									<ul class="products-nav">
+										<li class="ee"><a href="http://ellislab.com/expressionengine" title="ExpressionEngine, Commercial Web Platform">ExpressionEngine</a></li>
+										<li><a href="http://ellislab.com/codeigniter" title="CodeIgniter, Open Source PHP framework">CodeIgniter</a></li>
+										<li><a href="http://ellislab.com/mojomotor" title="MojoMotor">MojoMotor</a></li>
+										<li class="last-item"><a href="http://ellislab.com/support" title="Product &amp; Customer Support">Support</a></li>
+									</ul>
+									<li class="about"><a href="http://ellislab.com/about" title="About EllisLab">about</a></li>
+									<li><a href="http://ellislab.com/blog" title="Our Blog">blog</a></li>
+									<li class="last-item"><a href="http://ellislab.com/community" title="The Community">community</a></li>
+								</ul>
+							</nav>
+						</ul>
+						<ul class="secondary-nav">
+														<li><a href="https://store.ellislab.com/" title="EllisLab Store">store</a> </li>
+																						<li class="logged-out"><a href="http://ellislab.com/forums/viewthread/158882/#" title="Please Sign In">Sign In</a></li>
+													</ul>
+																			<div class="login-wrap login-form hide">
+								<span class="arrow-border"></span>
+								<span class="arrow"></span>
+								<form method="post" action="http://ellislab.com/">
+<div class="hiddenFields">
+<input type="hidden" name="XID" value="8722c0d6416c4127d8a3c405d72c057bf3a0f5cd">
+<input type="hidden" name="ACT" value="15">
+<input type="hidden" name="RET" value="forums/viewthread/158882">
+<input type="hidden" name="site_id" value="1">
+</div>
+
+
+									<fieldset>
+										<input type="hidden" name="auto_login" value="1">
+									</fieldset>
+									<fieldset>
+										<input name="username" type="text" value="" placeholder="username">
+									</fieldset>
+									<fieldset>
+										<input name="password" type="password" value="" placeholder="password">
+										<em><a href="http://ellislab.com/forums/member/forgot_password" title="Retrieve password">Forgot password</a> or <a href="http://ellislab.com/forums/member/register" title="Create a new account">New account</a></em>
+									</fieldset>
+									<fieldset class="last">
+										<input type="submit" value="sign in">
+									</fieldset>
+								</form>
+							</div>
+											</div>
+				</div>
+			</nav>
+			<div class="masthead">
+				<div class="column-wrap">
+					<section class="column colspan-16">
+						<div class="brand">
+							<a href="http://ellislab.com/" title="Return to EllisLab"><img src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/logo.png" alt="EllisLab text mark"></a>
+						</div>
+						<nav class="extra">
+
+						</nav>
+					</section>
+				</div>
+			</div>
+			<nav class="breadcrumb-nav">
+	<div class="column-wrap">
+		<div class="column colspan-16">
+			<ul>
+				<li><a href="http://ellislab.com/" title="Return to EllisLab">EllisLab</a></li>
+				<li><a href="http://ellislab.com/forums/" title="Forum Home">Forum Home</a></li><li><a href="http://ellislab.com/forums/viewcategory/48/" title="CodeIgniter">CodeIgniter</a></li><li><a href="http://ellislab.com/forums/viewforum/58/" title="Libraries &amp; Helpers">Libraries &amp; Helpers</a></li><li class="last">Thread</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+		</header>
+		<section class="content">
+			<div class="column-wrap">
+				<section class="column colspan-16">
+<!--<div id='topBar'>
+<div class='topBarLinks'>
+
+
+	Welcome Guest
+	&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+	<a href="http://ellislab.com/forums/member/login/">Login</a>
+	&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+	<a href="http://ellislab.com/forums/member/register/">Register</a>
+	&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+	<a href="http://ellislab.com/forums/member/memberlist/">Member List</a>
+
+
+
+
+</div>
+</div>-->
+<div id="pageheader">
+<table style="width:100%; height:50px;" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="width:45%;"><a href="http://ellislab.com/forums/" title="EllisLab Community Forums">
+
+<h2 class="forumlogo">Forum Logo</h2>
+<!--<img class="forumlogo" src="/asset/css/img/logo.png" alt="EllisLab text mark">-->
+<!--<img src="http://ellislab.com/asset/themes/forum_themes/ellislab_forums/images/forum_logo.jpg" width="216" height="74" border="0" alt="ExpressionEngine Forums" />-->
+
+</a></td>
+<td style="width:55%;" align="right" class="rightheader">
+
+
+
+
+<form method="post" action="http://ellislab.com/">
+<div class="hiddenFields">
+<input type="hidden" name="XID" value="1b5bed978ffc0cf4b3289bb67ff4d4759588d628">
+<input type="hidden" name="ACT" value="15">
+<input type="hidden" name="FROM" value="forum">
+<input type="hidden" name="mbase" value="http://ellislab.com/forums/member/">
+<input type="hidden" name="board_id" value="1">
+<input type="hidden" name="anon" value="1">
+<input type="hidden" name="RET" value="http://ellislab.com/forums/viewthread/158882/">
+<input type="hidden" name="site_id" value="1">
+</div>
+
+
+<table class="login-form-mini" cellpadding="0" cellspacing="4" border="0" align="right">
+<tbody><tr>
+<td>Username</td>
+<td><input type="text" class="input" name="username" size="15" value=""></td>
+<td><input type="checkbox" class="checkbox" name="auto_login" value="1" checked="checked"> Remember Me?</td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" class="input" name="password" size="15"></td>
+<td><input type="submit" class="submit" value="Login">&nbsp; <a href="http://ellislab.com/forums/member/forgot_password/">forgot password?</a>	</td>
+</tr>
+</tbody></table>
+</form>
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+<!--<div id="subheader">
+	<div class="itempadbig"></div>
+	
+		<form method="post" action="http://ellislab.com/forums/do_search/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="XID" value="753be4da547e4d16723abab415b44a5f3a26a771" />
+<input type="hidden" name="board_id" value="1" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<input type="text" class="input" name="keywords" size="20" value="Search in all forums" maxlength="80" style="width:200px" onfocus="if(this.value=='Search in all forums') this.value='';" onblur="if(this.value== '') this.value='Search in all forums';"> <input type="submit" class="submit" value="Search">
+				<a class="advanced-search" href="http://ellislab.com/forums/search/">Advanced Search</a>
+			</td>
+		</tr>
+	</table>
+</form>
+	
+</div>-->
+<table class="f-list tableBorderLeft" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+<tbody><tr>
+	<td class="tableRowHeading" colspan="5">
+		<form method="post" action="http://ellislab.com/forums/do_search/">
+<div class="hiddenFields">
+<input type="hidden" name="XID" value="ce9e6539d19aace6126482abcbec1bc826e932d6">
+<input type="hidden" name="board_id" value="1">
+<input type="hidden" name="site_id" value="1">
+</div>
+
+
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td>
+				<input type="text" class="input" name="keywords" size="20" value="Search in all forums" maxlength="80" style="width:200px" onfocus="if(this.value==&#39;Search in all forums&#39;) this.value=&#39;&#39;;" onblur="if(this.value== &#39;&#39;) this.value=&#39;Search in all forums&#39;;"> <input type="submit" class="submit" value="Search">
+				<a class="advanced-search" href="http://ellislab.com/forums/search/">Advanced Search</a>
+			</td>
+		</tr>
+	</tbody></table>
+</form>
+	</td>
+</tr>
+</tbody></table>
+<div id="content">
+<script type="text/javascript">
+<!--
+
+function showimage(loc, width, height)
+{
+	window.open(loc,'Image','width='+width+',height='+height+',screenX=0,screenY=0,top=0,left=0,toolbar=0,status=0,scrollbars=0,location=0,menubar=1,resizable=1');
+	return false;
+}
+
+window.ee_solution_id = false;
+
+function updateRating(url, el_id)
+{
+	var http;
+
+	try {
+		http = new window.XMLHttpRequest();
+	} catch( e ) {
+		http = new window.ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	http.open("POST", url, true);
+	http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded', false);
+	http.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+	http.onreadystatechange = function() {
+		if (http && http.readyState == 4)
+		{
+			var response = eval('('+http.responseText+')'),
+				temp_table, new_row, old_row, i,
+				replace = response;
+
+			if (typeof response === "object") {
+				replace = response.replace_rows;
+
+				if ('solution_id' in response) {
+					window.ee_solution_id = response.solution_id;
+				}
+			}
+
+			for (i = 0; i < replace.length; i++)
+			{
+				temp_table = document.createElement('table')
+				temp_table.innerHTML = replace[i];
+
+				new_row = temp_table.getElementsByTagName('tr')[0];
+				old_row = document.getElementById(new_row.id);
+
+				if (old_row) {
+					old_row.innerHTML = new_row.innerHTML;
+				}
+			}
+
+			delete temp_table;
+		}
+	}
+
+	var data = 'row_id='+el_id+'&XID=0f43388f45f707e481db88d809f7645ba877f7b6';
+
+	if (window.ee_solution_id !== false) {
+		data += '&solution_html_id='+window.ee_solution_id;
+	}
+
+	http.send(data);
+}
+
+function showfastreply()
+{
+	if (document.getElementById('fastreply').style.display == "block")
+	{
+		document.getElementById('fastreply').style.display = "none";
+	}
+	else
+	{
+		document.getElementById('fastreply').style.display = "block";
+	}
+}
+
+function showHideRow(el)
+{
+	if (document.getElementById(el).style.display == "")
+	{
+		document.getElementById(el).style.display = "none";
+	}
+	else
+	{
+		document.getElementById(el).style.display = "";
+	}
+}
+//-->
+</script>
+<table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;width:100%;">
+	<tbody><tr>
+		<td valign="middle" style="width:80%;">
+			&nbsp;
+		</td>
+		<td align="right">
+			&nbsp;
+			&nbsp;
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="f-list" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+	<tbody><tr>
+		<td class="tableHeadingBG" colspan="2">
+			<div class="tableHeading">Support for SMTP over TLS (STARTTLS)</div>
+		</td>
+		<td class="tableHeadingBG" colspan="1" align="right">
+			<div class="altLinks">&nbsp;</div>
+		</td>
+	</tr>
+	
+<tr id="a9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/168234/">nicko2n</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 24 June 2010 01:43 PM</td>
+							<td align="right">
+								
+								
+									
+								
+								
+								
+								
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Summer Student</div> -->
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						
+					</div> -->
+					<div class="userBlock">Joined: 2010-06-24<br>1 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><p>My SMTP provider (Exchange system) doesn’t accept SSL connections and requires the use of SMTP over TLS instead (STARTTLS, RFC 3207). Here is a small patch to the Email class which adds support for it. It is written against 1.7.2. If this is useful to others, you’re most welcome to incorporate it in a future release.</p>
+
+<p>Usage: <br>
+Specify server settings as a regular SMTP server (tcp://servername, typically port 25 or 587).<br>
+Enable new setting in config ($config[‘starttls’] = TRUE;)</p>
+
+<p>Depends on TLS being available (i.e., listed in the ‘Registered Stream Socket Transports’ section of phpinfo()).</p>
+
+<p><br>
+Patch</p><div class="codeblock"><code><span style="color: #000000">
+<span style="color: #91f291">---&nbsp;</span><span style="color: #f5f8cc">a</span><span style="color: #91f291">/</span><span style="color: #f5f8cc">system</span><span style="color: #91f291">/</span><span style="color: #f5f8cc">libraries</span><span style="color: #91f291">/</span><span style="color: #f5f8cc">Email</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">php<br></span><span style="color: #91f291">+++&nbsp;</span><span style="color: #f5f8cc">b</span><span style="color: #91f291">/</span><span style="color: #f5f8cc">system</span><span style="color: #91f291">/</span><span style="color: #f5f8cc">libraries</span><span style="color: #91f291">/</span><span style="color: #f5f8cc">Email</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">php<br></span><span style="color: #91f291">@@&nbsp;-</span><span style="color: #f5f8cc">51</span><span style="color: #91f291">,</span><span style="color: #f5f8cc">6&nbsp;</span><span style="color: #91f291">+</span><span style="color: #f5f8cc">51</span><span style="color: #91f291">,</span><span style="color: #f5f8cc">7&nbsp;</span><span style="color: #91f291">@@&nbsp;class&nbsp;</span><span style="color: #f5f8cc">CI_Email&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">var&nbsp;</span><span style="color: #f5f8cc">$send_multipart&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">TRUE</span><span style="color: #91f291">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;TRUE/FALSE&nbsp;-&nbsp;Yahoo&nbsp;does&nbsp;not&nbsp;like&nbsp;multipart&nbsp;alternative,&nbsp;so&nbsp;this&nbsp;is&nbsp;an&nbsp;override.&nbsp;&nbsp;Set&nbsp;to&nbsp;FALSE&nbsp;for&nbsp;Yahoo.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">var&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$bcc_batch_mode&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;TRUE/FALSE&nbsp;&nbsp;Turns&nbsp;on/off&nbsp;Bcc&nbsp;batch&nbsp;feature<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">var&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$bcc_batch_size&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">200</span><span style="color: #91f291">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;If&nbsp;bcc_batch_mode&nbsp;=&nbsp;TRUE,&nbsp;sets&nbsp;max&nbsp;number&nbsp;of&nbsp;Bccs&nbsp;in&nbsp;each&nbsp;batch<br></span><span style="color: #91f291">+&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$starttls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;Issue&nbsp;STARTTLS&nbsp;after&nbsp;connection&nbsp;to&nbsp;switch&nbsp;to&nbsp;Secure&nbsp;SMTP&nbsp;over&nbsp;TLS&nbsp;(RFC&nbsp;3207)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">var&nbsp;</span><span style="color: #f5f8cc">$_safe_mode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$_subject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">""</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$_body&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">""</span><span style="color: #91f291">;<br>@@&nbsp;-</span><span style="color: #f5f8cc">1581</span><span style="color: #91f291">,</span><span style="color: #f5f8cc">7&nbsp;</span><span style="color: #91f291">+</span><span style="color: #f5f8cc">1582</span><span style="color: #91f291">,</span><span style="color: #f5f8cc">20&nbsp;</span><span style="color: #91f291">@@&nbsp;class&nbsp;</span><span style="color: #f5f8cc">CI_Email&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;<br></span><span style="color: #91f291">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_connect</span><span style="color: #91f291">();<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_connect</span><span style="color: #91f291">())&nbsp;</span><span style="color: #f5f8cc">{<br></span><span style="color: #91f291">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br></span><span style="color: #91f291">+<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">starttls</span><span style="color: #91f291">)&nbsp;</span><span style="color: #f5f8cc">{<br></span><span style="color: #91f291">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'starttls'</span><span style="color: #91f291">))&nbsp;</span><span style="color: #f5f8cc">{<br></span><span style="color: #91f291">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_set_error_message</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'email_starttls_failed'</span><span style="color: #91f291">);<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br></span><span style="color: #91f291">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">stream_socket_enable_crypto</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_connect</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">true</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">STREAM_CRYPTO_METHOD_TLS_CLIENT</span><span style="color: #91f291">);<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;Re-issue&nbsp;hello&nbsp;to&nbsp;get&nbsp;updated&nbsp;service&nbsp;list&nbsp;(RFC&nbsp;3207&nbsp;section&nbsp;4.2)<br></span><span style="color: #91f291">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'hello'</span><span style="color: #91f291">);<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br></span><span style="color: #91f291">+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_authenticate</span><span style="color: #91f291">();<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'from'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">clean_email</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_headers[</span><span style="color: #FFFFFF">'From'</span><span style="color: #f5f8cc">]</span><span style="color: #91f291">));<br>@@&nbsp;-</span><span style="color: #f5f8cc">1708</span><span style="color: #91f291">,</span><span style="color: #f5f8cc">6&nbsp;</span><span style="color: #91f291">+</span><span style="color: #f5f8cc">1722</span><span style="color: #91f291">,</span><span style="color: #f5f8cc">12&nbsp;</span><span style="color: #91f291">@@&nbsp;class&nbsp;</span><span style="color: #f5f8cc">CI_Email&nbsp;{<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">221</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #FFFFFF">'starttls'&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">:<br>+<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'STARTTLS'</span><span style="color: #91f291">);<br>+<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">220</span><span style="color: #91f291">;<br>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$reply&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_get_smtp_data</span><span style="color: #91f291">();&nbsp;</span>
+</span>
+</code></div>
+
+<p>Example:</p><div class="codeblock"><code><span style="color: #000000">
+<span style="color: #f5f8cc">&lt;?php<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">function&nbsp;</span><span style="color: #f5f8cc">send_email</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$addr</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$subject</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$data</span><span style="color: #91f291">)&nbsp;</span><span style="color: #f5f8cc">{<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">load</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">library</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'email'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'protocol'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">'smtp'</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'smtp_host'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">'tcp://servername'</span><span style="color: #91f291">;&nbsp;</span><span style="color: #479fd1">#&nbsp;Not&nbsp;tls://&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'smtp_port'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">25</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'starttls'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">TRUE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'smtp_user'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;&lt;</span><span style="color: #f5f8cc">username</span><span style="color: #91f291">&gt;;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'smtp_pass'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;&lt;</span><span style="color: #f5f8cc">password</span><span style="color: #91f291">&gt;;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'smtp_timeout'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">5</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'newline'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">"\r\n"</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'charset'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">'utf-8'</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$config[</span><span style="color: #FFFFFF">'mailtype'</span><span style="color: #f5f8cc">]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">'html'</span><span style="color: #91f291">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">initialize</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$config</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">from</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'&lt;email&nbsp;addr&gt;'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #FFFFFF">'User&nbsp;name'</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">to</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$addr</span><span style="color: #91f291">);&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">subject</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$subject</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">message</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$data</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$rc&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">send</span><span style="color: #91f291">();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">email</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">print_debugger</span><span style="color: #91f291">();<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>?&gt;&nbsp;</span>
+</span>
+</code></div></div>
+					
+					
+						
+					
+					
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="a1" onclick="navJump('http://ellislab.com/forums/member/168234/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+									
+									
+									
+								
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr id="b9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/42943/">matt2012</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 26 July 2010 07:39 PM</td>
+							<td align="right">
+								
+								
+								
+								
+								
+								
+									&nbsp;&nbsp;<span class="smallLinks">[ <a name="778915" href="http://ellislab.com/forums/viewreply/778915/" title="Permalink to this post" rel="nofollow"># 1</a> ]</span>
+									&nbsp;&nbsp;<span class="smallLinks">[ Rating: 0 ]</span>
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Grad Student</div> -->
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						<img src="http://ellislab.com/asset/themes/forum_themes/ellislab_forums/images/rank.gif" width="9" height="10" border="0" alt="Rank" class="rankImage">
+					</div> -->
+					<div class="userBlock">Joined: 2007-04-04<br>61 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><p>This was the cure for my google mail problems.</p>
+
+<p>Thanks for this I have added your changes to a library to override the built in Class.</p>
+
+<p>MY_Email in libraries</p><div class="codeblock"><code><span style="color: #000000">
+<span style="color: #f5f8cc">&lt;?php&nbsp;</span><span style="color: #91f291">if&nbsp;(!</span><span style="color: #f5f8cc">defined</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'BASEPATH'</span><span style="color: #91f291">))&nbsp;exit(</span><span style="color: #FFFFFF">'No&nbsp;direct&nbsp;script&nbsp;access&nbsp;allowed.'</span><span style="color: #91f291">);<br>class&nbsp;</span><span style="color: #f5f8cc">MY_Email&nbsp;</span><span style="color: #91f291">extends&nbsp;</span><span style="color: #f5f8cc">CI_Email&nbsp;{<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">var&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$starttls&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;Issue&nbsp;STARTTLS&nbsp;after&nbsp;connection&nbsp;to&nbsp;switch&nbsp;to&nbsp;Secure&nbsp;SMTP&nbsp;over&nbsp;TLS&nbsp;(RFC&nbsp;3207)<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">function&nbsp;</span><span style="color: #f5f8cc">MY_Email</span><span style="color: #91f291">()<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parent</span><span style="color: #91f291">::</span><span style="color: #f5f8cc">CI_Email</span><span style="color: #91f291">();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br></span><span style="color: #91f291">function&nbsp;</span><span style="color: #f5f8cc">_send_with_smtp</span><span style="color: #91f291">()<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">smtp_host&nbsp;</span><span style="color: #91f291">==&nbsp;</span><span style="color: #FFFFFF">''</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_set_error_message</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'email_no_hostname'</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(!</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_connect</span><span style="color: #91f291">())&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">starttls</span><span style="color: #91f291">)&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(!&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'starttls'</span><span style="color: #91f291">))&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_set_error_message</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'email_starttls_failed'</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stream_socket_enable_crypto</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_connect</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">true</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">STREAM_CRYPTO_METHOD_TLS_CLIENT</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;Re-issue&nbsp;hello&nbsp;to&nbsp;get&nbsp;updated&nbsp;service&nbsp;list&nbsp;(RFC&nbsp;3207&nbsp;section&nbsp;4.2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'hello'</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_authenticate</span><span style="color: #91f291">();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'from'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">clean_email</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_headers[</span><span style="color: #FFFFFF">'From'</span><span style="color: #f5f8cc">]</span><span style="color: #91f291">));<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_recipients&nbsp;</span><span style="color: #91f291">as&nbsp;</span><span style="color: #f5f8cc">$val</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'to'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$val</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">count</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_cc_array</span><span style="color: #91f291">)&nbsp;&gt;&nbsp;</span><span style="color: #f5f8cc">0</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">foreach(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_cc_array&nbsp;</span><span style="color: #91f291">as&nbsp;</span><span style="color: #f5f8cc">$val</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">$val&nbsp;</span><span style="color: #91f291">!=&nbsp;</span><span style="color: #FFFFFF">""</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'to'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$val</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">count</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_bcc_array</span><span style="color: #91f291">)&nbsp;&gt;&nbsp;</span><span style="color: #f5f8cc">0</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">foreach(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_bcc_array&nbsp;</span><span style="color: #91f291">as&nbsp;</span><span style="color: #f5f8cc">$val</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">$val&nbsp;</span><span style="color: #91f291">!=&nbsp;</span><span style="color: #FFFFFF">""</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'to'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$val</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'data'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #479fd1">//&nbsp;perform&nbsp;dot&nbsp;transformation&nbsp;on&nbsp;any&nbsp;lines&nbsp;that&nbsp;begin&nbsp;with&nbsp;a&nbsp;dot<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_header_str&nbsp;</span><span style="color: #91f291">.&nbsp;</span><span style="color: #f5f8cc">preg_replace</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'/^\./m'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #FFFFFF">'..$1'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_finalbody</span><span style="color: #91f291">));<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'.'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$reply&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_get_smtp_data</span><span style="color: #91f291">();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_set_error_message</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$reply</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #f5f8cc">strncmp</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$reply</span><span style="color: #91f291">,&nbsp;</span><span style="color: #FFFFFF">'250'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">3</span><span style="color: #91f291">)&nbsp;!=&nbsp;</span><span style="color: #f5f8cc">0</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_set_error_message</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'email_smtp_error'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$reply</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'quit'</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">TRUE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">function&nbsp;</span><span style="color: #f5f8cc">_send_command</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$cmd</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$data&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">''</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">switch&nbsp;(</span><span style="color: #f5f8cc">$cmd</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">case&nbsp;</span><span style="color: #FFFFFF">'hello'&nbsp;</span><span style="color: #91f291">:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_auth&nbsp;</span><span style="color: #91f291">OR&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_get_encoding</span><span style="color: #91f291">()&nbsp;==&nbsp;</span><span style="color: #FFFFFF">'8bit'</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'EHLO&nbsp;'</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_get_hostname</span><span style="color: #91f291">());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'HELO&nbsp;'</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_get_hostname</span><span style="color: #91f291">());<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">250</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #FFFFFF">'from'&nbsp;</span><span style="color: #91f291">:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'MAIL&nbsp;FROM:&lt;'</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">$data</span><span style="color: #91f291">.</span><span style="color: #FFFFFF">'&gt;'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">250</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #FFFFFF">'to'&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'RCPT&nbsp;TO:&lt;'</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">$data</span><span style="color: #91f291">.</span><span style="color: #FFFFFF">'&gt;'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">250</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #FFFFFF">'data'&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'DATA'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">354</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #FFFFFF">'quit'&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'QUIT'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">221</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #FFFFFF">'starttls'&nbsp;</span><span style="color: #91f291">:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_send_data</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'STARTTLS'</span><span style="color: #91f291">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$resp&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">220</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$reply&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_get_smtp_data</span><span style="color: #91f291">();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_debug_msg[]&nbsp;</span><span style="color: #91f291">=&nbsp;</span><span style="color: #FFFFFF">"&lt;pre&gt;"</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">$cmd</span><span style="color: #91f291">.</span><span style="color: #FFFFFF">":&nbsp;"</span><span style="color: #91f291">.</span><span style="color: #f5f8cc">$reply</span><span style="color: #91f291">.</span><span style="color: #FFFFFF">"&lt;/pre&gt;"</span><span style="color: #91f291">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #f5f8cc">substr</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$reply</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">0</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">3</span><span style="color: #91f291">)&nbsp;!=&nbsp;</span><span style="color: #f5f8cc">$resp</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_set_error_message</span><span style="color: #91f291">(</span><span style="color: #FFFFFF">'email_smtp_error'</span><span style="color: #91f291">,&nbsp;</span><span style="color: #f5f8cc">$reply</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #f5f8cc">FALSE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">if&nbsp;(</span><span style="color: #f5f8cc">$cmd&nbsp;</span><span style="color: #91f291">==&nbsp;</span><span style="color: #FFFFFF">'quit'</span><span style="color: #91f291">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose</span><span style="color: #91f291">(</span><span style="color: #f5f8cc">$this</span><span style="color: #91f291">-&gt;</span><span style="color: #f5f8cc">_smtp_connect</span><span style="color: #91f291">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #91f291">return&nbsp;</span><span style="color: #f5f8cc">TRUE</span><span style="color: #91f291">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f5f8cc">}<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>}&nbsp;</span>
+</span>
+</code></div></div>
+					
+					
+					
+					
+						<fieldset class="signature">
+
+<legend class="signatureTitle">&nbsp;Signature&nbsp;</legend>
+
+
+
+<p><a href="http://www.easy2web.co.uk/">easy2web</a></p>
+
+</fieldset>
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="b1" onclick="navJump('http://ellislab.com/forums/member/42943/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+								
+									
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr id="c9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/42943/">matt2012</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 27 July 2010 07:51 PM</td>
+							<td align="right">
+								
+								
+								
+								
+								
+								
+									&nbsp;&nbsp;<span class="smallLinks">[ <a name="779511" href="http://ellislab.com/forums/viewreply/779511/" title="Permalink to this post" rel="nofollow"># 2</a> ]</span>
+									&nbsp;&nbsp;<span class="smallLinks">[ Rating: 0 ]</span>
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Grad Student</div> -->
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						<img src="http://ellislab.com/asset/themes/forum_themes/ellislab_forums/images/rank.gif" width="9" height="10" border="0" alt="Rank" class="rankImage">
+					</div> -->
+					<div class="userBlock">Joined: 2007-04-04<br>61 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><p>For those who come looking I was actually able to fix the google issue simple by adding</p><div class="codeblock"><code><span style="color: #000000">
+<span style="color: #FFFFFF">'smtp_timeout'&nbsp;</span><span style="color: #91f291">=&gt;&nbsp;</span><span style="color: #f5f8cc">30</span><span style="color: #91f291">,&nbsp;</span>
+</span>
+</code></div></div>
+					
+					
+					
+					
+						<fieldset class="signature">
+
+<legend class="signatureTitle">&nbsp;Signature&nbsp;</legend>
+
+
+
+<p><a href="http://www.easy2web.co.uk/">easy2web</a></p>
+
+</fieldset>
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="c1" onclick="navJump('http://ellislab.com/forums/member/42943/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+								
+									
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr id="d9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/255211/">Jeff Walters</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 10 October 2011 02:50 PM</td>
+							<td align="right">
+								
+								
+								
+								
+								
+								
+									&nbsp;&nbsp;<span class="smallLinks">[ <a name="943173" href="http://ellislab.com/forums/viewreply/943173/" title="Permalink to this post" rel="nofollow"># 3</a> ]</span>
+									&nbsp;&nbsp;<span class="smallLinks">[ Rating: 0 ]</span>
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Summer Student</div> -->
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						
+					</div> -->
+					<div class="userBlock">Joined: 2011-05-24<br>4 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><blockquote><div class="quote_author">nicko2n - 24 June 2010 01:43 PM</div><p>My SMTP provider (Exchange system) doesn’t accept SSL connections and requires the use of SMTP over TLS instead (STARTTLS, RFC 3207). Here is a small patch to the Email class which adds support for it. It is written against 1.7.2. If this is useful to others, you’re most welcome to incorporate it in a future release.</p>
+
+<p>Usage: <br>
+Specify server settings as a regular SMTP server (tcp://servername, typically port 25 or 587).<br>
+Enable new setting in config ($config[‘starttls’] = TRUE;)</p>
+</blockquote>
+
+<p>Thanks for the Exchange Patch Nick! Very useful indeed. Everything worked well with our Exchange server. I noticed you mentioned that this patch needed the tcp:// on the server host name. This was not true for me. It worked without it; just a regular host name. stream_socket_enable_crypto() just encrypts the current connection.</p>
+
+<p>Thanks for the post, Jeff</p>
+
+<p>&nbsp;</p></div>
+					
+					
+					
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="d1" onclick="navJump('http://ellislab.com/forums/member/255211/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+								
+									
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr id="e9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/305742/">Miles</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 23 February 2012 04:19 PM</td>
+							<td align="right">
+								
+								
+								
+								
+								
+								
+									&nbsp;&nbsp;<span class="smallLinks">[ <a name="982040" href="http://ellislab.com/forums/viewreply/982040/" title="Permalink to this post" rel="nofollow"># 4</a> ]</span>
+									&nbsp;&nbsp;<span class="smallLinks">[ Rating: 0 ]</span>
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Summer Student</div> -->
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						
+					</div> -->
+					<div class="userBlock">Joined: 2012-02-23<br>2 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><p>As of 2.1.0, you can accomplish this without extending the Email class…</p>
+
+<p>Solution:<br>
+For TLS: $config[‘smtp_crypto’] = ‘tls’;<br>
+For SSL: $config[‘smtp_crypto’] = ‘ssl’;</p>
+
+<p>Tested it today and it works great!</p></div>
+					
+					
+					
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="e1" onclick="navJump('http://ellislab.com/forums/member/305742/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+								
+									
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr id="f9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/67733/">stubear</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 13 February 2013 10:50 AM</td>
+							<td align="right">
+								
+								
+								
+								
+								
+								
+									&nbsp;&nbsp;<span class="smallLinks">[ <a name="1047819" href="http://ellislab.com/forums/viewreply/1047819/" title="Permalink to this post" rel="nofollow"># 5</a> ]</span>
+									&nbsp;&nbsp;<span class="smallLinks">[ Rating: 0 ]</span>
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Lab Assistant</div> -->
+					
+						<div class="itempad">
+							<img src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/avatar_67733.png" width="64" height="64" border="0" alt="Avatar">
+						</div>
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						<img src="http://ellislab.com/asset/themes/forum_themes/ellislab_forums/images/rank.gif" width="9" height="10" border="0" alt="Rank" class="rankImage"><img src="http://ellislab.com/asset/themes/forum_themes/ellislab_forums/images/rank.gif" width="9" height="10" border="0" alt="Rank" class="rankImage">
+					</div> -->
+					<div class="userBlock">Joined: 2008-06-11<br>173 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><blockquote><div class="quote_author">Miles - 23 February 2012 04:19 PM</div><p>As of 2.1.0, you can accomplish this without extending the Email class…</p>
+
+<p>Solution:<br>
+For TLS: $config[‘smtp_crypto’] = ‘tls’;<br>
+For SSL: $config[‘smtp_crypto’] = ‘ssl’;</p>
+
+<p>Tested it today and it works great!</p>
+</blockquote>
+
+<p>I’m running into this issue now. Has this config variable been confirmed? I’m still having trouble over all with getting Freeform (and by extension email sent through the Communicate tab in the CP) and I’m just trying to eliminate things like this so their Exchange Server admin can stop blaming EE and start looking into this from his end. I did have to hack the CI email library to overwrite the port (587 instead of 25) and I had to change the newline and crlf variables to /r/n instead of just /n. Anything else I might have missed? Any other changed to the CI email library that need to be made? Other hidden config variables that need to be set?</p></div>
+					
+					
+					
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="f1" onclick="navJump('http://ellislab.com/forums/member/67733/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+								
+									
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr id="g9">
+	<td colspan="3">
+		<table class="threadBorder" cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+			<tbody><tr>
+				<td class="tableRowHeading bord-b light-head" style="width:130px;"><div class="largeLinks"><a href="http://ellislab.com/forums/member/305742/">Miles</a></div></td>
+				<td class="tableRowHeading bord-b light-head" colspan="2">
+					<table cellpadding="0" cellspacing="0" border="0" style="width:99%;">
+						<tbody><tr>
+							<td>Posted: 13 February 2013 03:42 PM</td>
+							<td align="right">
+								
+								
+								
+								
+								
+								
+									&nbsp;&nbsp;<span class="smallLinks">[ <a name="1047832" href="http://ellislab.com/forums/viewreply/1047832/" title="Permalink to this post" rel="nofollow"># 6</a> ]</span>
+									&nbsp;&nbsp;<span class="smallLinks">[ Rating: 0 ]</span>
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellOne" style="width:130px;" valign="top">
+					<!-- <div class="rankMember">Summer Student</div> -->
+					
+					<!--
+										-->
+					<!-- <div class="itempad">
+						
+					</div> -->
+					<div class="userBlock">Joined: 2012-02-23<br>2 posts</div>
+					
+					<!-- group_id = {author_group_id} -->
+
+				</td>
+				<td class="tableCellOne" valign="top" colspan="2">
+					<div class="post"><blockquote><div class="quote_author">stubear - 13 February 2013 10:50 AM</div><blockquote><div class="quote_author">Miles - 23 February 2012 04:19 PM</div><p>As of 2.1.0, you can accomplish this without extending the Email class…</p>
+
+<p>Solution:<br>
+For TLS: $config[‘smtp_crypto’] = ‘tls’;<br>
+For SSL: $config[‘smtp_crypto’] = ‘ssl’;</p>
+
+<p>Tested it today and it works great!</p>
+</blockquote>
+
+<p>I’m running into this issue now. Has this config variable been confirmed? I’m still having trouble over all with getting Freeform (and by extension email sent through the Communicate tab in the CP) and I’m just trying to eliminate things like this so their Exchange Server admin can stop blaming EE and start looking into this from his end. I did have to hack the CI email library to overwrite the port (587 instead of 25) and I had to change the newline and crlf variables to /r/n instead of just /n. Anything else I might have missed? Any other changed to the CI email library that need to be made? Other hidden config variables that need to be set?</p>
+</blockquote>
+
+<p>Stubear, which version of Codeigniter are you running?&nbsp; The port and new line can be set in the config and do not need to be edited in the core files at all. </p>
+
+<p>I’ve put an example of how I’m accomplishing the TLS on this pastebin link <a href="http://pastebin.com/pu9YiMfL">http://pastebin.com/pu9YiMfL</a></p>
+
+<p>I hope this helps</p></div>
+					
+					
+					
+					
+				</td>
+			</tr>
+			<tr>
+				<td class="tableCellTwo" style="width:130px;">
+					<!-- <table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td align="center">
+								<div class="button">
+									<div class="buttonSmall" id="g1" onclick="navJump('http://ellislab.com/forums/member/305742/')" onmouseover="navHover(this);" onmouseout="navReset(this);">Profile</div>
+								</div>
+							</td>
+							
+						</tr>
+					</table> -->
+				</td>
+				<td class="tableCellTwo" colspan="2">
+					<table class="f-controls" cellpadding="0" cellspacing="0" border="0">
+						<tbody><tr>
+							<td>
+								
+								
+								
+								
+									
+								
+								&nbsp;
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;width:100%;">
+	<tbody><tr>
+		<td valign="middle" style="width:70%;">
+			&nbsp;
+		</td>
+		<td align="right">
+			&nbsp;
+			&nbsp;
+		</td>
+	</tr>
+</tbody></table>
+&nbsp;<div class="snap" style="position: absolute !important; top: -10000px !important;"><input type="text" id="snap_BALGSiTks" name="snap_BALGSiTks" value="tJJAliYHJZiqy"></div>
+<script type="text/javascript">document.getElementById("snap_BALGSiTks").value = "MleNwHaazQoAT";</script>
+<script type="text/javascript">window.onload = function() { document.getElementById("submit_post").appendChild(document.getElementById("snap_BALGSiTks").parentNode); }</script>
+
+</div>
+
+				<!-- cannot switch theme -->
+				
+				</section>
+			</div>
+		</section>
+		<footer>
+			<div class="copyright-wrap">
+				<div class="column-wrap">
+					<section class="column colspan-16">
+						<p class="copyright">©2002–2013, <a href="http://ellislab.com/" title="Return to EllisLab">EllisLab</a>, Inc.<br><span><a href="http://ellislab.com/about/privacy-policy" title="Our Privacy Policy">Privacy Policy</a>, <a href="http://ellislab.com/about/terms-of-service" title="Our Terms of Service">Terms of Service</a></span></p>
+						<p class="builton">built on <a href="http://ellislab.com/expressionengine" title="ExpressionEngine, Commercial Web Platform">ExpressionEngine</a><br><span><a class="scroll" href="http://ellislab.com/forums/viewthread/158882/#up-top" title="return to the top">return to the top</a></span></p>
+					</section>
+				</div>
+			</div>
+			<nav class="sitemap">
+				<div class="connect">
+					<div class="column-wrap">
+						<section class="social-wrap column colspan-4">
+							<ul class="social-ico">
+								<li class="twitter"><a href="http://twitter.com/ellislab" title="Follow EllisLab on Twitter" rel="external">twitter</a></li>
+								<!--<li class="facebook"><a href="http://facebook.com/expressionengine" title="Like EllisLab on Facebook" rel="external">facebook</a></li>-->
+							</ul>
+						</section>
+						<section class="enews block colspan-12">
+							<form action="http://ellislab.createsend.com/t/r/s/alhirt/" method="post" id="subForm">
+								<h2>PixelBuzz eNews</h2>
+								<fieldset class="column first">
+									<input name="cm-alhirt-alhirt" id="alhirt-alhirt" type="text" value="" placeholder="your e-mail">
+								</fieldset>
+								<fieldset class="column last">
+									<input type="submit" value="sign up">
+								</fieldset>
+							</form>
+						</section>
+					</div>
+				</div>
+				<div class="column-wrap">
+					<section class="logo column colspan-16">
+						<img src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/footer-logo.png" alt="EllisLab logo mark">
+					</section>
+				</div>
+			</nav>
+		</footer>
+		<script src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/jquery.min.js" type="text/javascript"></script>
+		<script src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/plugins.js" type="text/javascript"></script>
+		<script src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/common.js" type="text/javascript"></script>
+	<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-5.newrelic.com","eb488e72a1","2666983","NgEEZBYHDUFWVk0KWg9LJUUXEgxfGFNWEUAMF0lGDQMURl9HXAJRQUlGdQgKCkF7VFs=",0,160,new Date().getTime(),"","","","",""]);</script>
+<script type="text/javascript" src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/nr-100.js"></script><script type="text/javascript" src="./Support for SMTP over TLS (STARTTLS)   Forums   Community   EllisLab_files/eb488e72a1"></script></body></html>

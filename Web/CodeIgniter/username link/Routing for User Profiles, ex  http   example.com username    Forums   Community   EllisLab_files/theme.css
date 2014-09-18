@@ -1,0 +1,1164 @@
+/* Larger Links 
+------------------------------------------------------ */ 
+.largeLinks{ color: #000000; font-size: inherit; }
+
+.largeLinks a:link,
+.largeLinks a:visited{ color: #330066; text-decoration: none; } 
+
+.largeLinks a:hover{ color: #A0A4C1; }
+
+/* Alternate links in opposit color
+------------------------------------------------------ */ 
+.altLinks{ /*color: #FFFFFF;*/ font-size: inherit; }
+
+.altLinks a:link,
+.altLinks a:visited{ /*color: #FFFFFF;*/ text-decoration: underline; } 
+
+.altLinks a:hover{ color: #B8BDED; }
+
+/* Small links
+------------------------------------------------------ */ 
+.smallLinks{ color: #38394B; font-size: inherit; }
+
+.smallLinks a:link,
+.smallLinks a:visited{ color: #330099; text-decoration: none; } 
+
+.smallLinks a:hover{ color: #330099; }
+
+/* Links in forum posts
+------------------------------------------------------ */
+.post a:link,
+.post a:visited{ color: #330099; text-decoration: underline; }
+
+.post a:hover{ color: #A0A4C1; text-decoration: none; }
+
+/* Basic stuff
+------------------------------------------------------ */ 
+.default, 
+.defaultBold, 
+.defaultRight, 
+.defaultCenter{ font-size: inherit; }
+
+    .defaultBold{ font-weight: bold; }
+
+    .defaultRight{ text-align: right; }
+
+    .defaultSmall{ text-align: left; }
+
+    .defaultCenter{ text-align: center; }
+
+.lighttext{
+    color: #73769D;  
+    font-size: inherit;
+    padding: 4px 0 2px;
+}
+
+/* Special formatting for quotes, <code>, <pre> etc..
+------------------------------------------------------ */ 
+.codeblock{
+    /*background-color: #EFEFF4;
+    border: 1px solid #B2B3CE;*/
+    color: #38394B;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 8px 4px 10px 3px;
+    overflow: auto;
+    padding: 10px 10px 10px 6px;
+}
+
+.quote_author{
+    background-color: transparent;
+    color: #38394B;
+    font-size: inherit;
+    font-weight: bold;
+    margin: 0 0 4px;
+}
+
+/* Top Bar 
+------------------------------------------------------ */ 
+#topBar{ background-color: #666DAD; }
+
+.topBarLinks{ 
+    color: #FFFFFF;
+    font-size: inherit;
+    padding: 15px 30px 6px 20px;
+    text-align: center;
+}
+
+.topBarLinks a:link,
+.topBarLinks a:visited{ color: #FFFFFF; text-decoration: underline; } 
+
+.topBarLinks a:hover{ color: #B8BDED; text-decoration: none; }
+
+/* Page Header 
+------------------------------------------------------ */ 
+#pageheader{ background-color: #3F4585; border-bottom: 1px solid #000000; }
+
+/* Right side of page banner
+------------------------------------------------------ */ 
+.rightheader{  
+    color: #FFFFFF;
+    font-size: inherit;
+    padding: 0 22px 0 20px;
+    text-align: left;
+}
+
+.rightheader a:link,
+.rightheader a:visited{ color: #FFFFFF; text-decoration: underline; } 
+
+.rightheader a:hover{ color: #B9BDD4; text-decoration: none; }
+
+/* Private message box
+------------------------------------------------------ */ 
+.privatemessagebox{
+    background-color: #303466;
+    border: 1px solid #181B3C;
+    padding: 3px;
+}
+
+/* Member Signature
+------------------------------------------------------ */ 
+.signature{
+    border: 1px solid transparent;
+    border-top-color: #DBDCF5;
+    color: #38394B;
+    font-size: inherit;
+    margin: 15px 0 0;
+    padding: 3px inherit 4px 6px;
+}
+
+.signatureTitle{ color: #AEB0D8; font-size: inherit; }
+
+/* Sub-header Bar Contains the breadcrumb links
+------------------------------------------------------ */ 
+#subheader{
+    background-color: #F0F0F2;
+    border-bottom: 1px solid #8285AE;
+    padding: 4px 25px 3px 27px;
+}
+
+/* Breadcrumb Links
+------------------------------------------------------ */ 
+.breadcrumb{ font-size: inherit; }
+
+.breadcrumb a:link,
+.breadcrumb a:visited{ color: #330099; text-decoration: none; } 
+
+.breadcrumb a:hover{ color: #B9BDD4; text-decoration: underline; }
+
+.currentcrumb{ color: #38394B; font-weight: bold; }
+
+.breadcrumbspacer{ color: #6B6B85; }
+
+/* Misc. Formatting Items
+------------------------------------------------------ */ 
+.spacer{ margin-bottom: 5px; }
+
+.itempad{ padding: 2px 0; }
+
+.itempadbig{ padding: 5px 0; }
+
+.bottompad{ padding: 0 0 2px; }
+
+.marginpad{ margin: 12px 0 10px 3px; }
+
+.leftpad{ padding: 0 0 4px; }
+
+/* Main Content Wrapper (HUH!?)
+------------------------------------------------------ */ 
+#content{ margin: 0; width: auto; }
+
+    * html #content{ width: 100%; width: auto; }
+
+/* Forum related text formatting
+------------------------------------------------------ */ 
+.forumName,
+.forumDescription,
+.forumLightLinks{
+    color: #38394B;
+    font-size: inherit;
+    padding: 3px 0 0; 
+}
+
+    .forumDescription{ font-size: 12px; }
+
+    .forumName{ color: #333449; letter-spacing: .1em;}
+
+    .forumLightLinks{ color: #73769D; padding: 4px 0 2px; }
+
+.forumLightLinks a:link,
+.forumLightLinks a:visited{ color: #330099; text-decoration: none; } 
+
+.forumLightLinks a:hover{ color: #A0A4C1; text-decoration: underline; }
+
+.topicTitle{  
+    color: #333449;
+    font-size: inherit;
+    letter-spacing: .1em;
+}
+
+.userBlock{ padding: 2px 0; }
+
+.edited{ color: #555555; font-size: 9px; }
+
+/* File Attachments
+------------------------------------------------------ */ 
+.attachTitle{
+    background-color: #FAFAFA;
+    font-size: inherit;
+    font-weight: bold;
+    margin: 10px 0 1px;
+    padding: 4px;
+}
+
+.attachBody{
+    background-color: #FAFAFA;
+    font-size: inherit;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+.attachThumb{
+    background-color: #FAFAFA;
+    border: 1px solid #333;
+    margin: 3px 6px 3px 3px;
+}
+
+/* User Rank Text in Post
+------------------------------------------------------ */ 
+.rankAdmin,
+.rankModerator,
+.rankMember{
+    color: #349A01;
+    font-size: smaller; 
+    padding: 2px 0 3px;
+}
+
+    .rankModerator{ color: #990000; }
+
+    .rankMember{ color: #424A65; }
+
+.rankImage{ border: 0; margin: 0; padding: 0; }
+
+/* Button Formatting
+    This controls the look of the various buttons, like
+    the "NEW TOPIC" and "POST REPLY" buttons
+------------------------------------------------------ */ 
+/*.button{ width: 80px; }
+.button40{ width: 40px; }
+.button80{ width: 80px; }
+.button100{ width: 100px; }
+.button150{ width: 150px; }
+.button210{ width: 210px; }
+
+.buttonSpacer{ margin: 0 0 0 6px; }
+
+.buttonLarge,
+.buttonLargeHover,
+.buttonSmall,
+.buttonSmallHover{
+    background-color: #5C5FA0;
+    border: 1px solid #6266A6;
+    border-color: #6266A6 #44488E #44488E #6266A6;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: bold;
+    margin: 2px 0 4px;
+    padding: 4px 6px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+    .buttonLargeHover,
+    .buttonSmallHover{
+        background-color: #DCE0F6;
+        border-color: #7B7EB4 #66699D #66699D #7B7EB4;
+        color: #D0D2E8;
+    }
+
+    .buttonSmall,
+    .buttonSmallHover{ font-weight: bold; }
+
+        .buttonSmall{ margin: 0 2px 0 3px; padding: 2px 3px; }
+
+        .buttonSmallHover{ margin: 0 3px; padding: 2px 2px 2px 3px; }*/
+
+/* Post Preview
+------------------------------------------------------ */ 
+.preview{
+  background: #FAFAFA;
+  border: 1px dotted #D9D9D9;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+  .preview h2{
+    border-bottom: 1px dotted #D9D9D9;
+    padding-bottom: .5em;
+  }
+
+.previewheading{
+    /*background-color: #C9CAE2;
+    border: 1px solid #A7A9C7;
+    border-bottom: 0;
+    color: #FFFFFF;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 5px 0 5px 10px;*/
+}
+
+/* Moderator Highlight
+    This controls the look of the name of moderators
+    that appear in the stats area.  The idea is that
+    moderators appear in the list differently than
+    regular members
+------------------------------------------------------ */ 
+.activeModerator{ font-weight: bold; }
+
+/* Table Formatting
+------------------------------------------------------ */ 
+.border,
+.tableBorder,
+.tableBorderLeft,
+.tableBorderTopLeft,
+.tableBorderPad,
+.threadBorder{ border: 1px solid #B2B3CE; }
+
+.tableBorderLeft,
+.threadBorder{ border-width: 0 0 0 1px; }
+
+.border,
+.tableBorder,
+.tableBorderLeft,
+.tableBorderTopLeft,
+.tableBorderPad{ margin: 1px 0 3px; }
+
+.border,
+.tableBorder,
+.tableBorderLeft,
+.tableBorderTopLeft,
+.threadBorder{ padding: 0; }
+
+.tableBorder{ border-top: 0; }
+
+.tableBorderTopLeft{ border-width: 1px 0 0 1px; }
+
+.tableBorderPad{ padding: 1px; }
+
+.threadBorder{ margin: 0 0 8px; }
+
+.tableBG{ background-color: #F0F0F0; }
+
+.tablePad{ padding: 0 2px 4px; }
+
+.tableHeadingBG{
+    background-color: #DCEBF3;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 7px 6px;
+}
+
+    .tableHeadingBG a:link{ color: #10618F; }
+    .tableHeadingBG a:hover{ color: #C22A00; }
+
+.tableHeadingSmall{
+    color: #10618F;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+    .tableHeading{ 
+        color: #10618F;
+        font-size: 16px;
+        font-weight: bold; 
+        white-space: nowrap; 
+    }
+
+.tableRowHeading, 
+.tableRowHeadingBold{
+    border-bottom: 1px solid #A7A9C7;
+    border-top: 1px solid #A7A9C7;
+    color: #404055;
+    font-size: inherit;
+    padding: 8px 10px 8px 6px;
+}
+
+    .tableRowHeadingBold{ font-weight: bold; }
+
+.tableRowSpacer{ background: #FBFBFD; padding: 0; }
+
+.tableCellOne,
+.tableCellTwo{
+    border: 1px solid;
+    border-color: #FFFFFF #B2B3CE #B2B3CE #FFFFFF;
+    color: #38394B;
+    font-size: inherit;
+    padding: 3px 6px;
+}
+
+.tablePostInfo{ color: #73769D; font-size: inherit; }
+
+.ignored{
+    border: 1px solid #B2B3CE;
+    margin: 1px 0 8px;
+    padding: 0;
+}
+
+/* Member Profile Page
+------------------------------------------------------ */ 
+.profileHeadingBG,
+.profileAlertHeadingBG{
+    border-bottom: 1px solid #4B5388;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+  .profileHeadingBG h1{ margin-bottom: .5em; }
+
+.profileAlertHeadingBG{
+    background-color: #6E0001;
+    border-color: #585C9C;
+}
+
+.profileTopBox{
+    background-color: #F0F0F2;
+    margin: 0;
+    padding: 7px 5px 5px;
+}
+
+.profileTitle{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;  
+    padding: 3px 5px 3px 0;
+}
+
+.profileItem{ 
+    color: #38394B;
+    font-size: inherit;
+    margin: 2px 0; 
+}
+
+.profilePhoto{
+    background-color: #F0F0F2;
+    border-left: 1px solid #B2B3CE;
+    margin: 1px 0 3px;
+    padding: 1px;
+}
+
+.avatar,
+.photo{ margin: 3px 14px 0 3px; }
+
+.photo{ margin-top: 6px; }
+
+.profileHead{
+    border: 1px solid #FFFFFF;
+    border-width: 1px 0;
+    color: #FFFFFF;
+    font-size: inherit;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 4px 3px 10px; 
+    text-transform: uppercase;
+}
+
+.menuHeadingBG{
+    border-bottom: 1px solid #4B5388;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+.profileMenu{
+    border: 1px solid #7B81A9;
+    margin: 1px 0 3px;
+    padding: 1px;
+}
+
+.profileMenuInner{ margin: 4px 0; padding: 0 8px 0 10px; }
+
+.menuItem{ font-size: inherit; padding: 3px 0; }
+
+.borderTopBot{ border: 1px solid #4B5388; border-width: 1px 0; }
+
+.borderBot{ border-bottom: 1px solid #4B5388; }
+
+.success{
+    color: #009933;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.memberlistRowOne,
+.memberlistRowTwo{
+    border: 1px solid;
+    border-color: #FFFFFF #FFFFFF #B2B3CE #B2B3CE;
+    color: #38394B;
+    font-size: inherit;
+    padding: 3px 6px;
+}
+
+.memberlistHead{
+    border-bottom: 1px solid #4B5388;
+    color: #FFFFFF;
+    font-size: inherit;
+    font-weight: bold; 
+    padding: 8px 0 8px 8px;
+}
+
+.memberlistFooter{
+    border: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: #FFFFFF #FFFFFF #999999 transparent;
+    color: #000000;
+    font-size: inherit;
+    padding: 6px 10px 6px 6px;
+}
+
+.innerShade{
+    background-color: #DDE1E7;
+    border: 1px solid #74779D;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Search Formatting
+------------------------------------------------------ */ 
+.searchBox{
+    border: 1px dotted #D9D9D9;
+    margin: 0;
+    padding: 8px 5px 5px;
+}
+
+.searchBoxTitle{
+    font-size: inherit;
+    font-weight: bold; 
+}
+
+.searchpad{ padding: 6px 0 8px; }
+
+.searchspacer{ margin-bottom: 6px; }
+
+/* Pagination Links
+------------------------------------------------------ */ 
+.paginateBorder {
+  /*border: 1px solid #696EA4;
+    border-left: 0;
+    margin-bottom: 4px;*/
+
+}
+.paginateBorder td {
+  display: inline-block;
+  float: left; /* because we can't control pagination_links markup */
+  font-size: 1em;
+}
+    .paginateBorder td:first-child {
+      float: none; /* because we can't control pagination_links markup */
+    }
+
+.paginate,
+.paginateCur {
+/*  border: 1px solid #D9D9D9;    
+    -moz-border-radius: .5em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+  margin-right: .5em;
+  padding: .25em .5em; */
+    border: 1px solid #ADD8EB;
+    /*font-size: 0.75em;*/
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#FEFFEB));
+    background-image: -webkit-linear-gradient(top, white, #FEFFEB);
+    background-image: -moz-linear-gradient(top, white, #FEFFEB);
+    background-image: -ms-linear-gradient(top, white, #FEFFEB);
+    background-image: linear-gradient(to bottom, white, #FEFFEB);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;    
+    display: block;
+    margin-right: .5em;
+}
+
+.paginate a, .paginateCur{ text-decoration: none; }
+
+.paginate a:active, .paginateCur a:active{
+    border-color: #C22A00;
+    color: #C22A00;
+    font-weight: bold;
+}
+
+.paginate, .paginateCur, .paginateStat{ padding: 3px 5px; }
+
+/*.paginateStat {
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  color: #B2B2B2;
+  margin: 0;
+  padding: .25em .5em;
+  white-space: nowrap;
+}
+    .paginateStat:before { content: "("; }
+    .paginateStat:after { content: ")"; }
+
+.paginateCur { border-style: dashed; color: #dedede; }
+
+.paginate a:link,
+.paginate a:visited { text-decoration: none; }
+
+.paginate:hover{ background-color: #DCEBF3; }*/
+
+/* Form Field Formatting
+------------------------------------------------------ */ 
+.hidden{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.input,
+.textarea{
+    border: solid #979AC2;
+    border-width: 2px 1px 1px 2px;
+    color: #333333;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+} 
+
+    .input{ height: 1.5em; }
+
+.select,
+.multiselect{
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    margin-top: 2px;
+} 
+
+    .select{ margin-bottom: 2px; }
+
+    .multiselect{ border: solid #979AC2; border-width: 2px 1px 1px 2px; } 
+
+.radio,
+.checkbox{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+    .radio{ margin: 4px 0 4px; }
+
+.buttons,
+.submit{
+    background-color: #3F4471;
+    border: 1px solid;
+    border-color: #9EA3D5 #000000 #000000 #9EA3D5;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: bold;
+    letter-spacing: .1em;
+    margin: 0;
+    padding: 1px 6px 3px;
+}
+
+.submit{
+    background-color: #353A66;
+    font-weight: normal;
+    padding: 1px 4px;
+}  
+
+/* Error messages
+------------------------------------------------------ */ 
+.errorHeading, .errorMessage{ color: #BE320D; }
+
+.alert, .required{
+    color: #990000;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.highlight{ color: #990000; }
+
+/* Page Footer
+------------------------------------------------------ */ 
+#footer{
+    clear: both;
+    color: #999999;
+    font-size: 9px;
+    line-height: 15px;
+    margin: 20px 0 15px;
+    text-align: center;
+}
+
+/* Formatting Buttons
+------------------------------------------------------ */ 
+.buttonMode{ 
+    color: #73769D;
+    font-size: inherit;
+    white-space: nowrap;
+}
+
+.htmlButtonOuter, 
+.htmlButtonOuterL{
+    border: 1px solid #D9D9D9;
+    padding-top: 0 !important;
+}
+
+    .htmlButtonOuter{ border-left: 0; }
+
+.htmlButtonInner{ 
+    background-color: #FAFAFA;
+    border: 1px solid;
+    border-color: #FFFFFF #CCCCCC #CCCCCC #FFFFFF;
+    padding: 0 3px;
+    text-align: center;
+}
+
+.htmlButtonOff,
+.htmlButtonOn{
+    font-size: inherit;
+    font-weight: bold;
+    padding: 1px 2px 2px;
+    white-space: nowrap;
+}
+
+    .htmlButtonOn{ background-color: #F6F6F6; }
+
+.htmlButtonOff a:link,
+.htmlButtonOff a:visited,
+.htmlButtonOn a:link,
+.htmlButtonOn a:visited{ 
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* SPELL CHECK CSS
+--------------------------------------------------------------- */
+.iframe{ border: 1px solid #6666CC; }
+
+.wordSuggestion{
+    background-color: #F4F4F4; 
+    border: 1px solid #CCCCCC;
+    padding: 4px; 
+}
+
+.wordSuggestion a{ cursor: pointer; }
+
+.spellchecked_word{
+    background-color: #FFFFFF;
+    border-bottom: 1px dashed #FF0000;
+    cursor: pointer;
+}
+
+.spellchecked_word_selected{ background-color: #ADFF98; cursor: pointer; }
+
+/* 2012-04-24
+--------------------------------------------------------------- */
+/* note i am matching the style of what exists */
+.topBarLinks a, 
+.topBarLinks a:link, 
+.topBarLinks a:visited,
+.smallLinks a, 
+.smallLinks a:link, 
+.smallLinks a:visited,
+.breadcrumb a:link, 
+.breadcrumb a:visited,
+.largeLinks a, 
+.largeLinks a:link, 
+.largeLinks a:visited,
+.forumLightLinks a, 
+.forumLightLinks a:link, 
+.forumLightLinks a:visited{
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.smallLinks a,  
+.smallLinks a:link, 
+.smallLinks a:visited{ color: inherit; }
+
+.topBarLinks{
+    padding: 0;
+    padding-right: 1.5em;
+    text-align: right;
+}
+
+.privatemessagebox{
+    border: 0;
+    color: inherit;
+    padding: 3px;
+}
+
+#subheader, 
+.memberlistFooter{
+    border: solid #D9D9D9;
+    border-width: 1px 0;
+    -moz-box-shadow: 0 5px 0 0 rgba(0,0,0,0.02), 0 -5px 0 0 rgba(0,0,0,0.02);
+    -webkit-box-shadow: 0 5px 0 0 rgba(0,0,0,0.02), 0 -5px 0 0 rgba(0,0,0,0.02);
+    box-shadow: 0 5px 0 0 rgba(0,0,0,0.02), 0 -5px 0 0 rgba(0,0,0,0.02);
+    padding: 1.5em;
+}
+
+.profileTopBox, 
+.profilePhoto{
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FAFAFA);
+    border: 0;
+    margin: 0 0 20px;
+    padding: 20px;
+}
+
+/* bigger text resets */
+#footer, 
+.profileTitle, 
+.tablePostInfo, 
+.topicTitle, 
+.rightheader, 
+.forumLightLinks, 
+.menuHeadingBG, 
+.tableHeadingBG, 
+.profileHead, 
+.menuItem, 
+.profileHeadingBG, 
+.tableCellTwo, 
+.tableCellOne, 
+.tableBorderPad, 
+.tableRowHeading, 
+.tableRowHeadingBold, 
+.memberlistHead, 
+.memberlistRowTwo, 
+.memberlistRowOne, 
+.forumName, 
+.signatureTitle, 
+.largeLinks{
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    letter-spacing: inherit;
+    line-height: inherit;
+    padding: 3px 6px 3px 0;
+    text-transform: none;
+}
+
+.profileTitle{
+    color: #000000;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* smaller text resets */
+#footer, 
+.lighttext, 
+.forumLightLinks, 
+.tablePostInfo, 
+.rightheader, 
+.smallLinks, 
+.topBarLinks, 
+.defaultBold, 
+.defaultRight, 
+.defaultCenter, 
+.breadcrumb, 
+.userBlock, 
+.buttonMode, 
+.rankAdmin{
+    color: inherit;
+    font-family: inherit;
+    font-size: 72.5%;
+}
+
+.signature{ border-top: 1px dotted #D9D9D9; font-size: smaller; }
+
+.lighttext{ font-size: inherit; }
+
+.tableHeading{
+    font-weight: bold;
+    padding-left: 0;
+    text-transform: none;
+    white-space: normal; /* otherwise breaks table at long lengths */
+}
+
+.rightheader a, 
+.rightheader a:active, 
+.rightheader a:link, 
+.rightheader a:hover, 
+.rightheader a:visited, 
+.post a, 
+.post:active, 
+.post a:link, 
+.post a:hover, 
+.post a:visited{ color: inherit; }
+
+.tableHeadingBG, 
+.tableRowHeadingBold, 
+.memberlistHead{ border-bottom: 1px dotted #D9D9D9; font-weight: bold; }
+
+.defaultBold, 
+.select{ font-weight: inherit; font-size: 100%; }
+
+.profileHead{ border: 0; margin-left: .5em; }
+
+.menuItem{ margin-left: 1em; }
+
+.borderBot, 
+.tableBorderLeft, 
+.borderTopBot, 
+.tableBorderTopLeft, 
+.border, 
+.tableBorder, 
+.threadBorder{ border: 0; }
+
+.border{ border: 1px dotted #D9D9D9; }
+
+.threadBorder{ border-bottom: 2px solid #CCCCCC; padding-bottom: 1.25em; }
+
+.profileMenu{ border: 0; }
+
+.forumlogo{ margin-left: 25px; }
+
+.submit, 
+.buttonLarge, 
+.buttonLarge:hover, 
+.buttonSmall, 
+.buttonLargeHover, 
+.buttonSmallHover, 
+.buttons{
+    background-color: #2D88BC;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2D88BC), to(#10618F));
+    background-image: -webkit-linear-gradient(top, #2D88BC, #10618F);
+    background-image: -moz-linear-gradient(top, #2D88BC, #10618F);
+    background-image: -ms-linear-gradient(top, #2D88BC, #10618F);
+    background-image: linear-gradient(to bottom, #2D88BC, #10618F);
+    -moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,0.1) inset, 0 1px 3px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 -3px 0 0 rgba(0,0,0,0.1) inset, 0 1px 3px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.1) inset, 0 1px 3px 0 rgba(0,0,0,0.3);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.buttons{ font-size: .75em; }
+
+.buttonSmallHover, 
+.buttonLargeHover, 
+.buttons:hover{
+    background-color: #3496CE;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3496CE), to(#1371A6));
+    background-image: -webkit-linear-gradient(top, #3496CE, #1371A6);
+    background-image: -moz-linear-gradient(top, #3496CE, #1371A6);
+    background-image: -ms-linear-gradient(top, #3496CE, #1371A6);
+    background-image: linear-gradient(to bottom, #3496CE, #1371A6);
+    color: #FFFFFF;
+}
+
+.button100, 
+.buttonSmall, 
+.buttonSmallHover, 
+.button40, 
+.button{ font-size: smaller; }
+
+.button100{ width: 100%; }
+
+.input, 
+.textarea{
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #B2B2B2 #D9D9D9 #D9D9D9 #B2B2B2;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09) inset;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09) inset;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09) inset;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: inherit;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0.625em;
+    width: 100%;
+}
+
+.input[type="file"]{ border: 0; padding: 0; box-shadow: none; }
+
+.input[name="password"], 
+.input[name="username"], 
+.input[name="keywords"]{ margin-right: 1em; } 
+
+.input[name="keywords"],
+.submit[type="submit"]{ font-size: smaller; }
+
+#pageheader{ display: none; }
+
+/* Tables Override */
+.forum table{ border: 0; padding: 0; }
+
+    .forum td,
+    .forum th{ border: 0; padding: 0; }
+
+    .forum table.f-list{
+        border: 1px dotted #DDDDDD;
+        margin-bottom: 20px;
+        padding: 2px;
+    }
+
+        .f-list td,
+        .f-list th{ padding: 5px; }
+
+        .f-list .bord-b,
+        .f-list td{ border-bottom: 1px solid #DDDDDD; }
+
+            .f-list tr:last-child td{ border-bottom: 0; }
+
+            .f-list table td{ border: 0; }
+
+        .f-list th{
+            background-color: transparent;
+            border-bottom: 1px solid #AAAAAA;
+            box-shadow: 0 -3px 0 0 rgba(0,0,0,0.03) inset;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    .forum .f-controls{ border-top: 1px solid #DDDDDD; }
+
+        .forum .f-controls td{ padding: 10px 0 0; }
+
+    .btn-left{ display: inline; }
+
+    .light-head{ background-color: #F7FDFF; }
+
+/* Styles that pertain to member-related supporting pages added beginning 10/18/2012 #swedit
+------------------------------------------------------ */
+tr.pads{ height: 1.25em; }
+
+.avatar-wrap{ 
+    margin-right: 1em; 
+    margin-bottom: .5em;
+       -moz-border-radius: .5em; 
+    -webkit-border-radius: .5em; 
+            border-radius: .5em;
+}
+
+.topic-link{ font-weight: bold; }
+
+.topic-types{ margin-top: .25em; }
+
+.advanced-search{ margin-left: .75em; }
+
+/* Member Home Page */
+.member-home-page h3{ color: inherit; }
+
+    .member-home-page .sb{ margin: 0 auto .5em; padding-bottom: .5em; }
+
+/* Edit profile form */
+.edit-profile-form h2, .edit-profile-form h3{
+    color: #10618F;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding-left: 0;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.edit-profile-form h3{
+    border-bottom: 1px solid #ccc;    
+    margin-bottom: .25em;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.edit-profile-form td{
+    font-size: inherit;
+}
+
+.edit-profile-form input, .edit-profile-form textarea{
+    margin-bottom: .25em;
+    margin-top: .25em;
+}
+
+  .edit-profile-form input[name="search_keywords_1"]{ margin-bottom: .75em; margin-top: .5em; }
+
+.edit-profile-form .tableCellTwo:first-child{ font-weight: normal; padding-right: 1em;}
+
+    .edit-profile-form.public-profile .tableCellTwo:first-child{ font-weight: bold; }
+
+    .edit-profile-form.public-profile .tableCellOne:last-child{ border-bottom: 1px dotted #D9D9D9; padding-left: .25em; }
+
+.edit-profile-form tr+tr:not(.pads):after{
+    content: " ";
+    display: block;
+    margin-bottom: 2.25em;
+}
+
+.edit-profile-form .highlight{ float: left; font-weight: normal; margin-top: 1em; margin-bottom: 1em; }
+
+.edit-profile-form .html-formatter{ margin-top: -1em; }
+
+.edit-profile-form .notice{ float: left; width: 100%; }
+
+.edit-profile-form .topic-icon{ padding-top: .25em; }
+
+.edit-profile-form .posted-by{ margin-bottom: 1em; }
+
+.edit-profile-form .result-summary{ font-size: .825em; }
+
+    .edit-profile-form .result-summary ul{ margin: 0; }
+
+    .edit-profile-form .result-summary li{ font-size: 1em; }
+
+/* Login form */
+.login-form{ line-height: 1.25em; }
+    
+    .login-form .login-options{ margin-top: 1em; }
+    
+    .login-form .itempadbig,
+    .login-form .tableCellTwo{ text-align: left; }
+
+/* end member-related additions which were added beginning 10/18/2012 */
+
+/* new stuff */
+.quick-views{ 
+    list-style-type: none;
+    margin: 0 0 20px; 
+    padding: 0;
+}
+
+    .quick-views li{ 
+        display: inline;
+        font-size: 14px;  
+        margin-right: 10px; 
+    }
+
+.forum .solution{
+    background-color: #F7FFF6;
+    border: 2px solid #209544;
+    margin: 10px 0;
+}
+
+    .solution td{ padding: 10px 10px 0; }
+
+input[type="checkbox"],
+input[type="radio"]{ width: auto; }
