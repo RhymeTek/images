@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://embed.ly/docs/api/extract/features/article -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Embedly">
+<meta name="description" content="When processing the web its sometimes beneficial to have the full text of an
+article. You may want to store it for additional search terms, machine learning
+or display. The article feature takes a URL and parses out what we think is the
+complete article text. Its a little different than something like Readibiltys
+API so we would like you to understand how it works first, before getting into
+the details.">
+<meta property="og:title" content="Article Extraction | Embedly">
+<meta property="og:type" content="company">
+<meta property="og:image" content="http://embed.ly/static/images/logos/logo_color.png?v=4b245">
+<meta property="og:site_name" content="Embedly">
+<meta property="og:description" content="When processing the web its sometimes beneficial to have the full text of an
+article. You may want to store it for additional search terms, machine learning
+or display. The article feature takes a URL and parses out what we think is the
+complete article text. Its a little different than something like Readibiltys
+API so we would like you to understand how it works first, before getting into
+the details.">
+<meta name="google-site-verification" content="7P5vN6uWoUGcH5s87W0Vx2JnWZAUpKZtYo12iCVa01o">
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Apple Home Icons -->
+<link href="http://embed.ly/static/images/apple-touch-icon-144x144.png?v=5d8bb" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="http://embed.ly/static/images/apple-touch-icon-114x114.png?v=9aa5e" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="http://embed.ly/static/images/apple-touch-icon-72x72.png?v=63693" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="http://embed.ly/static/images/apple-touch-icon.png?v=620ce" rel="apple-touch-icon-precomposed apple-touch-icon">
+
+<!-- Meta Language tags -->
+<link rel="alternate" hreflang="en" href="./Article Extraction   Embedly_files/Article Extraction   Embedly.html">
+<link rel="alternate" hreflang="de" href="http://de.embed.ly/docs/api/extract/features/article">
+<link rel="alternate" hreflang="tr" href="http://tr.embed.ly/docs/api/extract/features/article">
+
+<title>Article Extraction | Embedly</title>
+<!-- Included CSS Files (Compressed) -->
+<link rel="stylesheet" href="http://embed.ly/static/styles/foundation.min.css?v=914fb">
+<link rel="stylesheet" href="http://embed.ly/static/styles/font-awesome.min.css?v=fa686">
+<link rel="stylesheet" href="http://embed.ly/static/styles/app.css?v=3ed9f">
+
+<link rel="stylesheet" href="http://embed.ly/static/styles/fontspring-stylesheet.css?v=5706c">
+
+<!-- Handle modern browswers with larger than 16px favicons -->
+<link rel="shortcut icon" href="http://embed.ly/static/images/favicon.ico?v=0b3ad">
+<link rel="icon" type="image/png" href="http://embed.ly/static/images/favicon.png?v=f1716">
+<script async="" src="./Article Extraction   Embedly_files/analytics.js"></script><script type="text/javascript" async="" src="./Article Extraction   Embedly_files/mixpanel-2.2.min.js"></script><script src="./Article Extraction   Embedly_files/modernizr.foundation.js"></script><style type="text/css"></style>
+
+<script src="./Article Extraction   Embedly_files/929012.js"></script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+'track_forms','register','register_once','unregister','identify','alias','name_tag','set_config',
+'people.set','people.set_once','people.increment','people.track_charge','people.append'];
+for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+
+mixpanel.init("74fd7100ab63464bded3829821256a34");
+
+mixpanel.track("pageviewed", {"location": window.location.toString()});
+</script>
+
+<meta property="st:title" content="Article Extraction">
+
+</head>
+<body class="">
+<!-- Header and Nav -->
+
+<header>
+<div class="row">
+<div class="three columns mobile-four">
+<a class="header-logo" href="http://embed.ly/" title="Home"><img src="./Article Extraction   Embedly_files/logo.png" alt="Embedly"></a>
+</div>
+<div class="nine columns mobile-four">
+<ul class="link-list right hide-for-small">
+<li><a href="http://embed.ly/products">Products</a></li>
+<li class="has-dropdown">
+<a href="http://embed.ly/api">API <i class="icon fa fa-chevron-down fa fa-white"></i></a>
+<ul class="dropdown">
+<li><a href="http://embed.ly/embed">
+<img src="./Article Extraction   Embedly_files/embed-icon-200-white.png" alt="Embed Icon White">
+<span>Embed</span>
+<p>The most powerful tool for embedding content into websites and apps</p>
+</a></li>
+<li class="divider"></li>
+<li><a href="http://embed.ly/extract">
+<img src="./Article Extraction   Embedly_files/extract-icon-200-white.png" alt="Extact Icon White">
+<span>Extract</span>
+<p> Extract elements from articles for smarter use in websites and apps </p>
+</a></li>
+<li class="divider"></li>
+<li><a href="http://embed.ly/display">
+<img src="./Article Extraction   Embedly_files/display-icon-200-white.png" alt="Display Icon White">
+<span>Display</span>
+<p>
+Resize and optimize images for better, faster display on websites and apps
+</p>
+</a></li>
+</ul>
+</li>
+<li><a href="http://embed.ly/docs">Docs</a></li>
+<li><a href="http://app.embed.ly/login">Login</a></li>
+</ul>
+</div>
+</div>
+</header>
+
+
+<!-- End Header and Nav -->
+
+<div class="row docs">
+<div class="twelve columns centered">
+<div class="row">
+<div class="two columns sub-nav">
+<ul class="unstyled block-grid one-up mobile-three-up">
+<li>
+<a href="http://embed.ly/docs">Documentation</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/search">Search</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api">API</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/api/embed">Embed</a></li>
+<li><a href="http://embed.ly/docs/api/extract">Extract</a></li>
+<li><a href="http://embed.ly/docs/api/display">Display</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/products">Products</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/products/cards">Cards</a></li>
+<li><a href="http://embed.ly/docs/products/button">Button</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/analytics">Analytics</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/analytics/install">Install</a></li>
+<li><a href="http://embed.ly/docs/analytics/faq">FAQ</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api/tutorials">Tutorials</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/tutorials/inline">Inline</a></li>
+<li><a href="http://embed.ly/docs/tutorials/modal">Modal</a></li>
+<li><a href="http://embed.ly/docs/tutorials/tooltips">Tooltips</a></li>
+<li><a href="http://embed.ly/docs/tutorials/quilt">Crop Images</a></li>
+<li><a href="http://embed.ly/docs/tutorials/comments">Comments</a></li>
+<li><a href="http://embed.ly/docs/tutorials/status">Status Update</a></li>
+<li><a href="http://embed.ly/docs/tutorials/search">Search</a></li>
+<li><a href="http://embed.ly/docs/tutorials/colors">Colors Filter</a></li>
+<li><a href="http://embed.ly/docs/tutorials/article">Article</a></li>
+<li><a href="http://embed.ly/docs/tutorials/background">Color Placeholder</a></li>
+<li><a href="http://embed.ly/docs/tutorials/gif">Play and Stop GIFs</a></li>
+<li><a href="http://embed.ly/docs/tutorials/responsive">Responsive Embeds</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api/libraries">Libraries</a>
+</li>
+</ul>
+
+</div>
+<div class="ten columns docs-content">
+
+<div>
+<div class="apibody" id="article-extraction">
+<h1><a href="http://embed.ly/docs/api/extract/features/article#article-extraction">Article Extraction</a></h1>
+<p>When processing the web it’s sometimes beneficial to have the full text of an
+article. You may want to store it for additional search terms, machine learning
+or display. The article feature takes a URL and parses out what we think is the
+complete article text. It’s a little different than something like Readibilty’s
+API so we would like you to understand how it works first, before getting into
+the details.</p>
+<div class="section" id="flow">
+<h2><a href="http://embed.ly/docs/api/extract/features/article#flow">Flow</a></h2>
+<p>When Embedly first sees a URL we break it into a set of features, this is then
+thrown against a trained classifier to decide whether it’s an article or not.
+Even if there is a lot of text on a page, we may choose not to classify it as
+an article. For example an index page of articles has a lot of text, but makes
+for a horrible article. Unlike a site such as Instapaper where users are mostly
+saving articles, Embedly’s URL base is much larger and therefore we need to
+decide what type of page it is before running an extraction.</p>
+<p>Once a URL is flagged as an article we will run it through a series of scoring
+algorithms to parse the main content from the page. The web is a messy place,
+so the generic code will not always cover edge cases. Because of this we have
+custom parsers for certain popular domains to make sure the output is what we
+expect.</p>
+<p>We then flatten the markup structure and get rid of common patterns like
+“Related Articles”, “Print this Page” or “Share This”. The output is added to
+the <tt class="docutils literal"><span class="pre">content</span></tt> attribute in the <a class="reference internal" href="http://embed.ly/docs/api/extract/endpoints/1/extract">Extract API</a> response.</p>
+<p>Once we have confirmed that the extractor can pull an article we will try to
+find an Author and Published date. We use a number of microformats to
+accomplish this, like <tt class="docutils literal"><span class="pre">hentry</span></tt> and <tt class="docutils literal"><span class="pre">rel=author</span></tt>. Currently, it’s fairly
+difficult to pull out an author from a page that does not contain microformat
+markup. Unlike date, there is no common patterns in names, so support is
+varied.</p>
+<p>We explain the flow, because we want you to understand why the API did not
+return an article, date or author. If you find a URL that you think should
+work, please submit a ticket to <a class="reference external" href="mailto:support%40embed.ly">support<span>@</span>embed<span>.</span>ly</a>.</p>
+</div>
+<div class="section" id="examples">
+<h2><a href="http://embed.ly/docs/api/extract/features/article#examples">Examples</a></h2>
+<p>Here are a few examples of what Embedly returns via the Article feature:</p>
+<ul class="simple"><li><a class="reference external" href="http://embed.ly/docs/explore/extract?url=http%3A%2F%2Frdegges.com%2Fmy-heroku-book-is-finished">Blog Post</a></li>
+<li><a class="reference external" href="http://embed.ly/docs/explore/extract?url=http%3A%2F%2Fwww.nytimes.com%2F2012%2F09%2F11%2Feducation%2Fteacher-strike-begins-in-chicago-amid-signs-that-deal-isnt-close.html%3Fsmid%3Dtw-nytimes%26seid%3Dauto">News Article</a></li>
+<li><a class="reference external" href="http://embed.ly/docs/explore/extract?url=http%3A%2F%2Fwww.economist.com%2Fnode%2F21562226">Another News Article</a></li>
+</ul></div>
+<div class="section" id="response">
+<h2><a href="http://embed.ly/docs/api/extract/features/article#response">Response</a></h2>
+<p>These are some of the Article extraction attributes found
+in the <a class="reference internal" href="http://embed.ly/docs/api/extract/endpoints/1/extract">Extract API</a>.</p>
+<p><tt class="docutils literal"><span class="pre">authors</span></tt></p>
+<blockquote>
+<div><p>A list of all the authors that are associated with this article. Each author
+has a <tt class="docutils literal"><span class="pre">url</span></tt> and <tt class="docutils literal"><span class="pre">name</span></tt>. Here is an example response:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">[{</span></li><li class="L1"><span class="pln">  </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sean Creeley"</span></li><li class="L2"><span class="pln">  </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"http://blog.embed.ly/screeley"</span></li><li class="L3"><span class="pun">}]</span></li></ol></pre></div>
+</div>
+<p>Most articles have only one author, but <tt class="docutils literal"><span class="pre">authors</span></tt> makes it flexible enough
+to add more if necessary.</p>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">title</span></tt></p>
+<blockquote>
+<div><p>Rather than using the page title, Embedly tries to intelligently pull a title
+that more accurately portrays the real title. For example, the page title may
+be:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">'This is my blog post about Startups - Yet another blog about Startups'</span></li></ol></pre></div>
+</div>
+<p>The article title would more than likely be:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">'This is my blog post about Startups'</span></li></ol></pre></div>
+</div>
+<p>Embedly will use <tt class="docutils literal"><span class="pre">H1</span></tt> tags, <tt class="docutils literal"><span class="pre">hentry</span></tt> and other methods to determine the
+best title.</p>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">published</span></tt></p>
+<blockquote>
+<div><p>A representation of the date which the article was published in milliseconds.
+If an <tt class="docutils literal"><span class="pre">offset</span></tt> is present, then there was timezone data present, otherwise
+we assume the Date is in UTC. Like all dates, this is a little confusing, so
+we will explain. Say the Embedly parser came across the following HTML:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pubdate"</span><span class="tag">&gt;</span><span class="pln">Aug 24, 2012</span><span class="tag">&lt;/span&gt;</span></li></ol></pre></div>
+</div>
+<p>Because there is no timezone information, Embedly will not return an
+<tt class="docutils literal"><span class="pre">offset</span></tt> and the <tt class="docutils literal"><span class="pre">published</span></tt> attribute will be in UTC. We will return the
+following response:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="pun">...</span></li><li class="L2"><span class="pln">  </span><span class="str">"article"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="str">"published"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1345766400000</span><span class="pun">,</span></li><li class="L4"><span class="pln">    </span><span class="str">"offset"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span></li><li class="L5"><span class="pln">    </span><span class="pun">...</span></li><li class="L6"><span class="pln">  </span><span class="pun">}</span></li><li class="L7"><span class="pun">}</span></li></ol></pre></div>
+</div>
+<p>We can convert the <tt class="docutils literal"><span class="pre">published</span></tt> to a <tt class="docutils literal"><span class="pre">datetime</span></tt> in Python like so:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="kwd">import</span><span class="pln"> datetime</span></li><li class="L1"><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="kwd">import</span><span class="pln"> time</span></li><li class="L2"><span class="pun">&gt;&gt;</span><span class="pln"> published </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1345766400000</span></li><li class="L3"><span class="pun">&gt;&gt;</span><span class="pln"> datetime</span><span class="pun">.</span><span class="pln">datetime</span><span class="pun">(*</span><span class="pln">time</span><span class="pun">.</span><span class="pln">gmtime</span><span class="pun">(</span><span class="pln">published </span><span class="pun">/</span><span class="pln"> </span><span class="lit">1000</span><span class="pun">)[:</span><span class="lit">7</span><span class="pun">])</span></li><li class="L4"><span class="pln">datetime</span><span class="pun">.</span><span class="pln">datetime</span><span class="pun">(</span><span class="lit">2012</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">24</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">)</span></li></ol></pre></div>
+</div>
+<p>Or in Javascript:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> d </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">1345766400000</span><span class="pun">);</span></li><li class="L1"><span class="pun">&gt;</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">toUTCString</span><span class="pun">()</span></li><li class="L2"><span class="str">"Fri, 24 Aug 2012 00:00:00 GMT"</span></li></ol></pre></div>
+</div>
+<p>Note that Javascript math in the browser is a little different because it
+takes in account your timezone. I.e.:</p>
+<blockquote>
+<div>&gt; var d = new Date(1345766400000);
+&gt; d.toString()
+“Thu Aug 23 2012 20:00:00 GMT-0400 (EDT)”</div></blockquote>
+<p>The date is actually the 23rd instead of the 24th because it’s subtracting
+4 hours because of my timezone. If there is no <tt class="docutils literal"><span class="pre">offset</span></tt> it’s a good idea to
+add your local offset to the <tt class="docutils literal"><span class="pre">published</span></tt> date so you have the correct day:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">local</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span></li><li class="L1"><span class="com">// Convert minutes to milliseconds here.</span></li><li class="L2"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> localOffset </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">local</span><span class="pun">.</span><span class="pln">getTimezoneOffset</span><span class="pun">()</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="pun">(</span><span class="lit">60</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">1000</span><span class="pun">);</span></li><li class="L3"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> d </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">1345766400000</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> localOffset</span><span class="pun">);</span></li><li class="L4"><span class="pun">&gt;</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">();</span></li><li class="L5"><span class="str">"Fri Aug 24 2012 00:00:00 GMT-0400 (EDT)"</span></li></ol></pre></div>
+</div>
+<p>Now say the Embedly parser comes across this HTML:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;time</span><span class="pln"> </span><span class="atn">datetime</span><span class="pun">=</span><span class="atv">"2012-08-28T10:37:00+02:00"</span><span class="pln"> </span><span class="atn">pubdate</span><span class="tag">&gt;</span><span class="pln">Aug 28th, 2012</span><span class="tag">&lt;/time&gt;</span></li></ol></pre></div>
+</div>
+<p>In this case we have timezone data via a UTC offset of +2 hours, so the date
+is parsed a bit differently. Embedly will return the following result:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="pun">...</span></li><li class="L2"><span class="pln">  </span><span class="str">"article"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="str">"published"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1346143020000</span><span class="pun">,</span></li><li class="L4"><span class="pln">    </span><span class="str">"offset"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7200000</span></li><li class="L5"><span class="pln">    </span><span class="pun">...</span></li><li class="L6"><span class="pln">  </span><span class="pun">}</span></li><li class="L7"><span class="pun">}</span></li></ol></pre></div>
+</div>
+<p>The <tt class="docutils literal"><span class="pre">offset</span></tt> is just +2 hours in milliseconds, if we just look at the
+<tt class="docutils literal"><span class="pre">published</span></tt> time you can see that the hour will be -6 hours in my browser
+because I’m in EDT:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> d </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">1346143020000</span><span class="pun">);</span></li><li class="L1"><span class="pun">&gt;</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">();</span></li><li class="L2"><span class="str">"Tue Aug 28 2012 04:37:00 GMT-0400 (EDT)"</span></li></ol></pre></div>
+</div>
+<p>If you want the date in the timezone in which it was published you can add
+your local offset and the article <tt class="docutils literal"><span class="pre">offset</span></tt> to the <tt class="docutils literal"><span class="pre">published</span></tt> time:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">local</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span></li><li class="L1"><span class="com">// Convert minutes to milliseconds here.</span></li><li class="L2"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> localOffset </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">local</span><span class="pun">.</span><span class="pln">getTimezoneOffset</span><span class="pun">()</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="pun">(</span><span class="lit">60</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">1000</span><span class="pun">);</span></li><li class="L3"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> published </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1346143020000</span><span class="pun">;</span></li><li class="L4"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> offset </span><span class="pun">=</span><span class="pln"> </span><span class="lit">7200000</span><span class="pun">;</span></li><li class="L5"><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> adjustedDate </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="pln">published</span><span class="pun">+</span><span class="pln">offset</span><span class="pun">+</span><span class="pln">localOffset</span><span class="pun">)</span></li><li class="L6"><span class="pun">&gt;</span><span class="pln"> adjustedDate</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">()</span></li><li class="L7"><span class="str">"Tue Aug 28 2012 10:37:00 GMT-0400 (EDT)"</span></li></ol></pre></div>
+</div>
+<p>Oh Javascript, you are the best.</p>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">offset</span></tt></p>
+<blockquote>
+<div>The UTC offset of the date in milliseconds. See the above section for more
+information about <tt class="docutils literal"><span class="pre">offset</span></tt> and how to use it with the <tt class="docutils literal"><span class="pre">published</span></tt> time.</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">description</span></tt></p>
+<blockquote>
+<div><p>This is much like the <tt class="docutils literal"><span class="pre">excerpt</span></tt> of the article, but with a few changes that
+make it better to use in an index view of the articles. The length of the
+description is controlled by the <tt class="docutils literal"><span class="pre">words</span></tt> <a class="reference internal" href="http://embed.ly/docs/api/extract/arguments">query argument</a>. Unlike the <tt class="docutils literal"><span class="pre">excerpt</span></tt>, <tt class="docutils literal"><span class="pre">description</span></tt> has the correct line
+breaks added. For example, imagine the following article <tt class="docutils literal"><span class="pre">content</span></tt>:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Text 1</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Text 2</span><span class="tag">&lt;/p&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Text 3</span><span class="tag">&lt;/p&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre></div>
+</div>
+<p>The description for the above would be:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="typ">Text</span><span class="pln"> </span><span class="lit">1</span></li><li class="L1"><span class="typ">Text</span><span class="pln"> </span><span class="lit">2</span></li><li class="L2"><span class="typ">Text</span><span class="pln"> </span><span class="lit">3</span></li></ol></pre></div>
+</div>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">lead</span></tt></p>
+<blockquote>
+<div><p>Often there is a lead paragraph that is a brief summary of the rest of the
+article. Embedly tries to pull this lead paragraph out for a better reading
+experience. It is always a <tt class="docutils literal"><span class="pre">p</span></tt> tag, i.e.:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">"lead"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&lt;p&gt;This is a summary of the below article&lt;/p&gt;"</span></li></ol></pre></div>
+</div>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">content</span></tt></p>
+<blockquote>
+<div><p>This is the html that we pulled from the URL. It’s been sanitized, so it will
+only contain the following tags:</p>
+<div class="highlight-none"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">'a'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'abbr'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'acronym'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'b'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'big'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'blockquote'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'br'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'cite'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'code'</span><span class="pun">,</span></li><li class="L1"><span class="str">'del'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'dfn'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'em'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'i'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'ins'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'kbd'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'mark'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'pre'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'q'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'s'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'samp'</span><span class="pun">,</span></li><li class="L2"><span class="str">'small'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'span'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'strike'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'strong'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'sub'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'sup'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'time'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'tt'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'u'</span><span class="pun">,</span></li><li class="L3"><span class="str">'var'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'p'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'div'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'a'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'h2'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'h3'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'h4'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'h5'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'h6'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'img'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'ol'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'ul'</span><span class="pun">,</span></li><li class="L4"><span class="str">'li'</span></li></ol></pre></div>
+</div>
+<p>All tag attributes have been removed as well. The only effective
+attributes are:</p>
+<blockquote>
+<div><ul class="simple"><li><tt class="docutils literal"><span class="pre">href</span></tt> on an <tt class="docutils literal"><span class="pre">a</span></tt> tag</li>
+<li><tt class="docutils literal"><span class="pre">src</span></tt> on an <tt class="docutils literal"><span class="pre">img</span></tt> tag</li>
+</ul></div></blockquote>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+</div>
+<!--<div class="two columns">
+<ul class='right-nav unstyled hide-for-small'>
+</ul>
+</div>-->
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+<div class="row collapse">
+<div class="three columns mobile-two">
+<img class="footer-logo" src="./Article Extraction   Embedly_files/footer-logo.png" alt="Embedly Footer Logo">
+<p class="copyright">©2014 All Rights Reserved</p>
+</div>
+<div class="eight offset-by-one columns mobile-two">
+<dl class="sub-nav hide-for-small">
+<dt>Product:</dt>
+<dd><a href="http://embed.ly/products">Products</a></dd>
+<dd><a href="http://embed.ly/embed/features/providers">Providers</a></dd>
+<dd><a href="http://embed.ly/legal/customer">Customer Service</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Documentation:</dt>
+<dd><a href="http://embed.ly/docs/overview">Overview</a></dd>
+<dd><a href="http://embed.ly/docs/apis">APIs</a></dd>
+<dd><a href="http://embed.ly/docs/tutorials">Tutorials</a></dd>
+<dd><a href="http://embed.ly/docs/faq">FAQs</a></dd>
+<dd><a href="http://support.embed.ly/">Support</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Company:</dt>
+<dd><a href="http://embed.ly/company">About Embedly</a></dd>
+<dd><a href="http://blog.embed.ly/">Blog</a></dd>
+<dd><a href="http://embed.ly/company/jobs">Jobs</a></dd>
+<dd><a href="http://embed.ly/company/press">Press</a></dd>
+<dd><a href="http://embed.ly/company/contact">Contact Us</a></dd>
+<dd><a href="http://embed.ly/legal">Legal</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Follow Us:</dt>
+<dd><a target="_blank" href="http://twitter.com/embedly"><i class="fa fa-twitter"></i> Twitter</a></dd>
+<dd><a target="_blank" href="http://www.facebook.com/embedly"><i class="fa fa-facebook"></i> Facebook</a></dd>
+<dd><a target="_blank" href="https://plus.google.com/107130838673680519337"><i class="fa fa-google-plus"></i> Google+</a></dd>
+<dd><a target="_blank" href="http://www.github.com/embedly"><i class="fa fa-github-alt"></i> gitHub</a></dd>
+<!-- blame FontAwesome for not having a Quora icon -->
+<!--<dd><a target="_blank" href="http://www.quora.com/Embedly">Quora</a></dd>-->
+</dl>
+<ul class="show-for-small">
+<li><a href="http://embed.ly/products">Products</a></li>
+<li><a href="http://embed.ly/docs">Documentation</a></li>
+<li><a href="http://app.embed.ly/login">Login</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+<!-- Included JS Files (Compressed) -->
+<script src="./Article Extraction   Embedly_files/jquery.js"></script>
+<script src="./Article Extraction   Embedly_files/foundation.min.js"></script>
+<script>var gaID = 'UA-15045445-1';</script>
+<!-- Initialize JS Plugins -->
+<script src="./Article Extraction   Embedly_files/app.js"></script>
+<script src="./Article Extraction   Embedly_files/utils.js"></script>
+<script src="./Article Extraction   Embedly_files/tracking.js"></script>
+<script src="./Article Extraction   Embedly_files/jquery.embedly-3.1.1.min.js"></script>
+<script src="./Article Extraction   Embedly_files/sprintf-0.7-beta1.js"></script>
+<script src="./Article Extraction   Embedly_files/prettify.js"></script>
+<script src="./Article Extraction   Embedly_files/colors.js"></script>
+<script src="./Article Extraction   Embedly_files/gifs.js"></script>
+<script src="./Article Extraction   Embedly_files/platform.js"></script>
+<script src="./Article Extraction   Embedly_files/embed-code-modal.js"></script>
+
+<script type="text/javascript">
+// Sets up the default key for the jQuery Plugin.
+$.embedly.defaults.key = '92b31102528511e1a2ec4040d3dc5c07';
+</script>
+
+<!-- Files for autocomplete and search -->
+<script src="./Article Extraction   Embedly_files/jquery.swiftype.autocomplete.js"></script>
+<script src="./Article Extraction   Embedly_files/jquery.ba-hashchange.min.js"></script>
+<script src="./Article Extraction   Embedly_files/jquery.swiftype.search.js"></script>
+<script src="./Article Extraction   Embedly_files/search.js"></script>
+<script src="./Article Extraction   Embedly_files/docs.js"></script>
+
+
+
+<script type="text/javascript">
+tracker.page = "docs"
+tracker.product = null
+tracker.path = "/docs/api/extract/features/article"
+</script>
+
+
+</body></html>

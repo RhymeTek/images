@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://embed.ly/docs/api/extract/response#extract-response-types -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Embedly">
+<meta name="description" content="A list of some Extract response objects.">
+<meta property="og:title" content="Extract - Response Objects | Embedly">
+<meta property="og:type" content="company">
+<meta property="og:image" content="http://embed.ly/static/images/logos/logo_color.png?v=4b245">
+<meta property="og:site_name" content="Embedly">
+<meta property="og:description" content="A list of some Extract response objects.">
+<meta name="google-site-verification" content="7P5vN6uWoUGcH5s87W0Vx2JnWZAUpKZtYo12iCVa01o">
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Apple Home Icons -->
+<link href="http://embed.ly/static/images/apple-touch-icon-144x144.png?v=5d8bb" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="http://embed.ly/static/images/apple-touch-icon-114x114.png?v=9aa5e" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="http://embed.ly/static/images/apple-touch-icon-72x72.png?v=63693" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="http://embed.ly/static/images/apple-touch-icon.png?v=620ce" rel="apple-touch-icon-precomposed apple-touch-icon">
+
+<!-- Meta Language tags -->
+<link rel="alternate" hreflang="en" href="http://embed.ly/docs/api/extract/response">
+<link rel="alternate" hreflang="de" href="http://de.embed.ly/docs/api/extract/response">
+<link rel="alternate" hreflang="tr" href="http://tr.embed.ly/docs/api/extract/response">
+
+<title>Extract - Response Objects | Embedly</title>
+<!-- Included CSS Files (Compressed) -->
+<link rel="stylesheet" href="http://embed.ly/static/styles/foundation.min.css?v=914fb">
+<link rel="stylesheet" href="http://embed.ly/static/styles/font-awesome.min.css?v=fa686">
+<link rel="stylesheet" href="http://embed.ly/static/styles/app.css?v=3ed9f">
+
+<link rel="stylesheet" href="http://embed.ly/static/styles/fontspring-stylesheet.css?v=5706c">
+
+<!-- Handle modern browswers with larger than 16px favicons -->
+<link rel="shortcut icon" href="http://embed.ly/static/images/favicon.ico?v=0b3ad">
+<link rel="icon" type="image/png" href="http://embed.ly/static/images/favicon.png?v=f1716">
+<script async="" src="./Extract - Response Objects   Embedly_files/analytics.js"></script><script type="text/javascript" async="" src="./Extract - Response Objects   Embedly_files/mixpanel-2.2.min.js"></script><script src="./Extract - Response Objects   Embedly_files/modernizr.foundation.js"></script><style type="text/css"></style>
+
+<script src="./Extract - Response Objects   Embedly_files/929012.js"></script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+'track_forms','register','register_once','unregister','identify','alias','name_tag','set_config',
+'people.set','people.set_once','people.increment','people.track_charge','people.append'];
+for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+
+mixpanel.init("74fd7100ab63464bded3829821256a34");
+
+mixpanel.track("pageviewed", {"location": window.location.toString()});
+</script>
+
+<meta property="st:title" content="Extract - Response Objects">
+
+</head>
+<body class="">
+<!-- Header and Nav -->
+
+<header>
+<div class="row">
+<div class="three columns mobile-four">
+<a class="header-logo" href="http://embed.ly/" title="Home"><img src="./Extract - Response Objects   Embedly_files/logo.png" alt="Embedly"></a>
+</div>
+<div class="nine columns mobile-four">
+<ul class="link-list right hide-for-small">
+<li><a href="http://embed.ly/products">Products</a></li>
+<li class="has-dropdown">
+<a href="http://embed.ly/api">API <i class="icon fa fa-chevron-down fa fa-white"></i></a>
+<ul class="dropdown" style="display: none;">
+<li><a href="http://embed.ly/embed">
+<img src="./Extract - Response Objects   Embedly_files/embed-icon-200-white.png" alt="Embed Icon White">
+<span>Embed</span>
+<p>The most powerful tool for embedding content into websites and apps</p>
+</a></li>
+<li class="divider"></li>
+<li><a href="http://embed.ly/extract">
+<img src="./Extract - Response Objects   Embedly_files/extract-icon-200-white.png" alt="Extact Icon White">
+<span>Extract</span>
+<p> Extract elements from articles for smarter use in websites and apps </p>
+</a></li>
+<li class="divider"></li>
+<li><a href="http://embed.ly/display">
+<img src="./Extract - Response Objects   Embedly_files/display-icon-200-white.png" alt="Display Icon White">
+<span>Display</span>
+<p>
+Resize and optimize images for better, faster display on websites and apps
+</p>
+</a></li>
+</ul>
+</li>
+<li><a href="http://embed.ly/docs">Docs</a></li>
+<li><a href="http://app.embed.ly/login">Login</a></li>
+</ul>
+</div>
+</div>
+</header>
+
+
+<!-- End Header and Nav -->
+
+<div class="row docs">
+<div class="twelve columns centered">
+<div class="row">
+<div class="two columns sub-nav">
+<ul class="unstyled block-grid one-up mobile-three-up">
+<li>
+<a href="http://embed.ly/docs">Documentation</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/search">Search</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api">API</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/api/embed">Embed</a></li>
+<li><a href="http://embed.ly/docs/api/extract">Extract</a></li>
+<li><a href="http://embed.ly/docs/api/display">Display</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/products">Products</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/products/cards">Cards</a></li>
+<li><a href="http://embed.ly/docs/products/button">Button</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/analytics">Analytics</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/analytics/install">Install</a></li>
+<li><a href="http://embed.ly/docs/analytics/faq">FAQ</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api/tutorials">Tutorials</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/tutorials/inline">Inline</a></li>
+<li><a href="http://embed.ly/docs/tutorials/modal">Modal</a></li>
+<li><a href="http://embed.ly/docs/tutorials/tooltips">Tooltips</a></li>
+<li><a href="http://embed.ly/docs/tutorials/quilt">Crop Images</a></li>
+<li><a href="http://embed.ly/docs/tutorials/comments">Comments</a></li>
+<li><a href="http://embed.ly/docs/tutorials/status">Status Update</a></li>
+<li><a href="http://embed.ly/docs/tutorials/search">Search</a></li>
+<li><a href="http://embed.ly/docs/tutorials/colors">Colors Filter</a></li>
+<li><a href="http://embed.ly/docs/tutorials/article">Article</a></li>
+<li><a href="http://embed.ly/docs/tutorials/background">Color Placeholder</a></li>
+<li><a href="http://embed.ly/docs/tutorials/gif">Play and Stop GIFs</a></li>
+<li><a href="http://embed.ly/docs/tutorials/responsive">Responsive Embeds</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api/libraries">Libraries</a>
+</li>
+</ul>
+
+</div>
+<div class="ten columns docs-content">
+
+<div>
+<div class="apibody" id="extract-response-objects">
+<h1><a href="http://embed.ly/docs/api/extract/response#extract-response-objects">Extract - Response Objects</a></h1>
+<p>A list of some Extract response objects.</p>
+<div class="section" id="response-types">
+<span id="extract-response-types"></span><h2><a href="http://embed.ly/docs/api/extract/response#response-types">Response Types</a></h2>
+<p>Response types are different than oEmbed types. They closely follow the mimetype
+for a given resource. They are as follows:</p>
+<dl class="docutils"><dt><tt class="docutils literal"><span class="pre">html</span></tt></dt>
+<dd>The most common response. The resource is an <tt class="docutils literal"><span class="pre">html</span></tt> document.</dd>
+<dt><tt class="docutils literal"><span class="pre">text</span></tt></dt>
+<dd>The response is a plain <tt class="docutils literal"><span class="pre">text</span></tt> document.</dd>
+<dt><tt class="docutils literal"><span class="pre">image</span></tt></dt>
+<dd>This is a static viewable <tt class="docutils literal"><span class="pre">image</span></tt>.</dd>
+<dt><tt class="docutils literal"><span class="pre">video</span></tt></dt>
+<dd>This is a playable <tt class="docutils literal"><span class="pre">video</span></tt>.</dd>
+<dt><tt class="docutils literal"><span class="pre">audio</span></tt></dt>
+<dd>This is a playable <tt class="docutils literal"><span class="pre">audio</span></tt>.</dd>
+<dt><tt class="docutils literal"><span class="pre">rss</span></tt></dt>
+<dd>The resource is an <tt class="docutils literal"><span class="pre">rss</span></tt> feed.</dd>
+<dt><tt class="docutils literal"><span class="pre">xml</span></tt></dt>
+<dd>The resource is an <tt class="docutils literal"><span class="pre">xml</span></tt> document.</dd>
+<dt><tt class="docutils literal"><span class="pre">atom</span></tt></dt>
+<dd>The resource is an <tt class="docutils literal"><span class="pre">atom</span></tt> feed.</dd>
+<dt><tt class="docutils literal"><span class="pre">json</span></tt></dt>
+<dd>The resource is a <tt class="docutils literal"><span class="pre">json</span></tt> document.</dd>
+<dt><tt class="docutils literal"><span class="pre">ppt</span></tt></dt>
+<dd>The resource is a PowerPoint document.</dd>
+<dt><tt class="docutils literal"><span class="pre">link</span></tt></dt>
+<dd>This is a general embed that may not contain HTML.</dd>
+<dt><tt class="docutils literal"><span class="pre">error</span></tt></dt>
+<dd>When accessing multiple urls at once Embedly will not throw HTTP errors as
+normal. Instead, it will return an <tt class="docutils literal"><span class="pre">error</span></tt> type response that includes the
+<tt class="docutils literal"><span class="pre">url</span></tt>, <tt class="docutils literal"><span class="pre">error_message</span></tt> and <tt class="docutils literal"><span class="pre">error_code</span></tt>.</dd>
+</dl></div>
+<div class="section" id="safe-browse">
+<span id="extract-safebrowse"></span><h2><a href="http://embed.ly/docs/api/extract/response#safe-browse">Safe Browse</a></h2>
+<p>See the <a class="reference internal" href="http://embed.ly/docs/api/extract/features/safe">Safe Browse</a> feature documentation.</p>
+</div>
+<div class="section" id="images">
+<span id="extract-images"></span><h2><a href="http://embed.ly/docs/api/extract/response#images">Images</a></h2>
+<p>A list of, at most, 5 images that Embedly found while processing the URL.
+For a more detailed breakddown, read through the
+<a class="reference internal" href="http://embed.ly/docs/api/extract/features/images">Images and Dominant Colors</a> feature documentation.</p>
+<p>They are in the following format:</p>
+<div class="highlight-json"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">[</span></li><li class="L1"><span class="pln">  </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="str">"caption"</span><span class="pun">:</span><span class="str">"The winners of the Embedly Hackathon."</span><span class="pun">,</span></li><li class="L3"><span class="pln">    </span><span class="str">"url"</span><span class="pun">:</span><span class="str">"https://lh3.googleusercontent.com/MaaMmP0N4psfPqQOUqegiz3q-SxnRd3sFn-</span></li><li class="L4"><span class="str">    XNKy92XLXo-R6dZIcFv7PkvgleeCqynGsUj4s9GUTnL__W77OpjmaTcBgis98nhudlkwsZp7-</span></li><li class="L5"><span class="str">    CNCqihX1zalDbQ"</span><span class="pun">,</span></li><li class="L6"><span class="pln">    </span><span class="str">"height"</span><span class="pun">:</span><span class="lit">768</span><span class="pun">,</span></li><li class="L7"><span class="pln">    </span><span class="str">"width"</span><span class="pun">:</span><span class="lit">1024</span><span class="pun">,</span></li><li class="L8"><span class="pln">    </span><span class="str">"colors"</span><span class="pun">:[</span></li><li class="L9"><span class="pln">      </span><span class="pun">{</span></li><li class="L0"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">14</span><span class="pun">,</span><span class="pln"> </span><span class="lit">16</span><span class="pun">,</span><span class="pln"> </span><span class="lit">18</span><span class="pun">],</span></li><li class="L1"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.311767578125</span></li><li class="L2"><span class="pln">      </span><span class="pun">},</span></li><li class="L3"><span class="pln">      </span><span class="pun">{</span></li><li class="L4"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">238</span><span class="pun">,</span><span class="pln"> </span><span class="lit">232</span><span class="pun">,</span><span class="pln"> </span><span class="lit">203</span><span class="pun">],</span></li><li class="L5"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.131103515625</span></li><li class="L6"><span class="pln">      </span><span class="pun">},</span></li><li class="L7"><span class="pln">      </span><span class="pun">{</span></li><li class="L8"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">213</span><span class="pun">,</span><span class="pln"> </span><span class="lit">193</span><span class="pun">,</span><span class="pln"> </span><span class="lit">160</span><span class="pun">],</span></li><li class="L9"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.103759765625</span></li><li class="L0"><span class="pln">      </span><span class="pun">},</span></li><li class="L1"><span class="pln">      </span><span class="pun">{</span></li><li class="L2"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">44</span><span class="pun">,</span><span class="pln"> </span><span class="lit">54</span><span class="pun">,</span><span class="pln"> </span><span class="lit">61</span><span class="pun">],</span></li><li class="L3"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.0810546875</span></li><li class="L4"><span class="pln">      </span><span class="pun">},</span></li><li class="L5"><span class="pln">      </span><span class="pun">{</span></li><li class="L6"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">138</span><span class="pun">,</span><span class="pln"> </span><span class="lit">157</span><span class="pun">,</span><span class="pln"> </span><span class="lit">168</span><span class="pun">],</span></li><li class="L7"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.07470703125</span></li><li class="L8"><span class="pln">      </span><span class="pun">}</span></li><li class="L9"><span class="pln">    </span><span class="pun">],</span></li><li class="L0"><span class="pln">    </span><span class="str">"entropy"</span><span class="pun">:</span><span class="lit">6.568857137759403</span><span class="pun">,</span></li><li class="L1"><span class="pln">    </span><span class="str">"size"</span><span class="pun">:</span><span class="lit">228025</span></li><li class="L2"><span class="pln">  </span><span class="pun">},</span></li><li class="L3"><span class="pln">  </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="str">"caption"</span><span class="pun">:</span><span class="kwd">null</span><span class="pun">,</span></li><li class="L5"><span class="pln">    </span><span class="str">"url"</span><span class="pun">:</span><span class="str">"http://getfile8.posterous.com/getfile/files.posterous.com/temp-2013-02-05/</span></li><li class="L6"><span class="str">    EDhdHbCefGlloIfwtzggzsppinpxHGhtsIDugJFBbhEzzBzdjohzFDIJfAaH/kawan.JPG.thumb100.jpg"</span><span class="pun">,</span></li><li class="L7"><span class="pln">    </span><span class="str">"height"</span><span class="pun">:</span><span class="lit">100</span><span class="pun">,</span></li><li class="L8"><span class="pln">    </span><span class="str">"width"</span><span class="pun">:</span><span class="lit">100</span><span class="pun">,</span></li><li class="L9"><span class="pln">    </span><span class="str">"colors"</span><span class="pun">:[</span></li><li class="L0"><span class="pln">      </span><span class="pun">{</span></li><li class="L1"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">25</span><span class="pun">,</span><span class="pln"> </span><span class="lit">11</span><span class="pun">,</span><span class="pln"> </span><span class="lit">26</span><span class="pun">],</span></li><li class="L2"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.466064453125</span></li><li class="L3"><span class="pln">      </span><span class="pun">},</span></li><li class="L4"><span class="pln">      </span><span class="pun">{</span></li><li class="L5"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">81</span><span class="pun">,</span><span class="pln"> </span><span class="lit">48</span><span class="pun">,</span><span class="pln"> </span><span class="lit">53</span><span class="pun">],</span></li><li class="L6"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.23046875</span></li><li class="L7"><span class="pln">      </span><span class="pun">},</span></li><li class="L8"><span class="pln">      </span><span class="pun">{</span></li><li class="L9"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">128</span><span class="pun">,</span><span class="pln"> </span><span class="lit">83</span><span class="pun">,</span><span class="pln"> </span><span class="lit">71</span><span class="pun">],</span></li><li class="L0"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.13720703125</span></li><li class="L1"><span class="pln">      </span><span class="pun">},</span></li><li class="L2"><span class="pln">      </span><span class="pun">{</span></li><li class="L3"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">187</span><span class="pun">,</span><span class="pln"> </span><span class="lit">188</span><span class="pun">,</span><span class="pln"> </span><span class="lit">180</span><span class="pun">],</span></li><li class="L4"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.060546875</span></li><li class="L5"><span class="pln">      </span><span class="pun">},</span></li><li class="L6"><span class="pln">      </span><span class="pun">{</span></li><li class="L7"><span class="pln">        </span><span class="str">"color"</span><span class="pun">:[</span><span class="lit">159</span><span class="pun">,</span><span class="pln"> </span><span class="lit">121</span><span class="pun">,</span><span class="pln"> </span><span class="lit">101</span><span class="pun">],</span></li><li class="L8"><span class="pln">        </span><span class="str">"weight"</span><span class="pun">:</span><span class="lit">0.06005859375</span></li><li class="L9"><span class="pln">      </span><span class="pun">}</span></li><li class="L0"><span class="pln">    </span><span class="pun">],</span></li><li class="L1"><span class="pln">    </span><span class="str">"entropy"</span><span class="pun">:</span><span class="lit">6.24755345469</span><span class="pun">,</span></li><li class="L2"><span class="pln">    </span><span class="str">"size"</span><span class="pun">:</span><span class="lit">4768</span></li><li class="L3"><span class="pln">  </span><span class="pun">}</span></li><li class="L4"><span class="pun">]</span></li></ol></pre>
+</div>
+<p>Embedly looks at the following attributes of the page and then ranks and scores
+the images.</p>
+<blockquote>
+<div><ul class="simple"><li>If the oEmbed type is <tt class="docutils literal"><span class="pre">photo</span></tt> the url of the oEmbed object</li>
+<li>The <tt class="docutils literal"><span class="pre">thumbnail_url</span></tt> of the oEmbed object if the oEmbed type is not
+<tt class="docutils literal"><span class="pre">photo</span></tt></li>
+<li>The Open Graph <tt class="docutils literal"><span class="pre">og:image</span></tt> property</li>
+<li>The <tt class="docutils literal"><span class="pre">meta</span></tt> <tt class="docutils literal"><span class="pre">image_src</span></tt> tag.</li>
+<li>Any images found in the API response.</li>
+<li>Images ranked and pulled from the body of the page.</li>
+</ul></div></blockquote>
+<p>The scoring system is weighted heavily toward larger images and images within
+structured responses, but images in the <tt class="docutils literal"><span class="pre">head</span></tt> of the document don’t always
+appear first in the list. <tt class="docutils literal"><span class="pre">og:image</span></tt> and <tt class="docutils literal"><span class="pre">image_src</span></tt> are generally small
+thumbnails that don’t always represent what’s on the page. We have found better
+results when giving them higher scores, but not defaulting them to the first
+image. Note that they will always appear in the results, even if we rank images
+pulled from the page higher.</p>
+<p>You can use <tt class="docutils literal"><span class="pre">images</span></tt> in a couple of ways:</p>
+<blockquote>
+<div><ul><li><p class="first">If there is no user interaction, you can just select the first image
+out of the array and display it like so:</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">'&lt;img /&gt;'</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">'src'</span><span class="pun">,</span><span class="pln"> obj</span><span class="pun">.</span><span class="pln">images</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">url</span><span class="pun">);</span></li></ol></pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">If you’re creating a Facebook-like URL selector tool, then you can
+display a list of images that a user can select from:</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="kwd">var</span><span class="pln"> ul </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">'&lt;ul&gt;&lt;/ul&gt;'</span><span class="pun">);</span></li><li class="L1"><span class="pln">$</span><span class="pun">.</span><span class="pln">each</span><span class="pun">(</span><span class="pln">obj</span><span class="pun">.</span><span class="pln">images</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">i</span><span class="pun">,</span><span class="pln"> img</span><span class="pun">){</span></li><li class="L2"><span class="pln">ul</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="str">'&lt;li&gt;&lt;/li&gt;'</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="str">'&lt;img&gt;'</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">'src'</span><span class="pun">,</span><span class="pln"> img</span><span class="pun">.</span><span class="pln">url</span><span class="pun">)));</span></li><li class="L3"><span class="pun">)};</span></li></ol></pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul></div></blockquote>
+</div>
+</div>
+</div>
+
+</div>
+<!--<div class="two columns">
+<ul class='right-nav unstyled hide-for-small'>
+</ul>
+</div>-->
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+<div class="row collapse">
+<div class="three columns mobile-two">
+<img class="footer-logo" src="./Extract - Response Objects   Embedly_files/footer-logo.png" alt="Embedly Footer Logo">
+<p class="copyright">©2014 All Rights Reserved</p>
+</div>
+<div class="eight offset-by-one columns mobile-two">
+<dl class="sub-nav hide-for-small">
+<dt>Product:</dt>
+<dd><a href="http://embed.ly/products">Products</a></dd>
+<dd><a href="http://embed.ly/embed/features/providers">Providers</a></dd>
+<dd><a href="http://embed.ly/legal/customer">Customer Service</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Documentation:</dt>
+<dd><a href="http://embed.ly/docs/overview">Overview</a></dd>
+<dd><a href="http://embed.ly/docs/apis">APIs</a></dd>
+<dd><a href="http://embed.ly/docs/tutorials">Tutorials</a></dd>
+<dd><a href="http://embed.ly/docs/faq">FAQs</a></dd>
+<dd><a href="http://support.embed.ly/">Support</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Company:</dt>
+<dd><a href="http://embed.ly/company">About Embedly</a></dd>
+<dd><a href="http://blog.embed.ly/">Blog</a></dd>
+<dd><a href="http://embed.ly/company/jobs">Jobs</a></dd>
+<dd><a href="http://embed.ly/company/press">Press</a></dd>
+<dd><a href="http://embed.ly/company/contact">Contact Us</a></dd>
+<dd><a href="http://embed.ly/legal">Legal</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Follow Us:</dt>
+<dd><a target="_blank" href="http://twitter.com/embedly"><i class="fa fa-twitter"></i> Twitter</a></dd>
+<dd><a target="_blank" href="http://www.facebook.com/embedly"><i class="fa fa-facebook"></i> Facebook</a></dd>
+<dd><a target="_blank" href="https://plus.google.com/107130838673680519337"><i class="fa fa-google-plus"></i> Google+</a></dd>
+<dd><a target="_blank" href="http://www.github.com/embedly"><i class="fa fa-github-alt"></i> gitHub</a></dd>
+<!-- blame FontAwesome for not having a Quora icon -->
+<!--<dd><a target="_blank" href="http://www.quora.com/Embedly">Quora</a></dd>-->
+</dl>
+<ul class="show-for-small">
+<li><a href="http://embed.ly/products">Products</a></li>
+<li><a href="http://embed.ly/docs">Documentation</a></li>
+<li><a href="http://app.embed.ly/login">Login</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+<!-- Included JS Files (Compressed) -->
+<script src="./Extract - Response Objects   Embedly_files/jquery.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/foundation.min.js"></script>
+<script>var gaID = 'UA-15045445-1';</script>
+<!-- Initialize JS Plugins -->
+<script src="./Extract - Response Objects   Embedly_files/app.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/utils.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/tracking.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/jquery.embedly-3.1.1.min.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/sprintf-0.7-beta1.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/prettify.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/colors.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/gifs.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/platform.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/embed-code-modal.js"></script>
+
+<script type="text/javascript">
+// Sets up the default key for the jQuery Plugin.
+$.embedly.defaults.key = '92b31102528511e1a2ec4040d3dc5c07';
+</script>
+
+<!-- Files for autocomplete and search -->
+<script src="./Extract - Response Objects   Embedly_files/jquery.swiftype.autocomplete.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/jquery.ba-hashchange.min.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/jquery.swiftype.search.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/search.js"></script>
+<script src="./Extract - Response Objects   Embedly_files/docs.js"></script>
+
+
+
+<script type="text/javascript">
+tracker.page = "docs"
+tracker.product = null
+tracker.path = "/docs/api/extract/response"
+</script>
+
+
+</body></html>

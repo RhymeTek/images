@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://embed.ly/docs/api/extract/features/keywords -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Embedly">
+<meta name="description" content="The keywords object gives you a list of ranked keywords
+extracted from the article or blog text of a URL.
+This is different from the meta keywords defined by the page.
+Embedly uses its own ranking system to determine
+which keywords are the most relevant. You can find this data in the
+Extract endpoint.">
+<meta property="og:title" content="Keywords | Embedly">
+<meta property="og:type" content="company">
+<meta property="og:image" content="http://embed.ly/static/images/logos/logo_color.png?v=4b245">
+<meta property="og:site_name" content="Embedly">
+<meta property="og:description" content="The keywords object gives you a list of ranked keywords
+extracted from the article or blog text of a URL.
+This is different from the meta keywords defined by the page.
+Embedly uses its own ranking system to determine
+which keywords are the most relevant. You can find this data in the
+Extract endpoint.">
+<meta name="google-site-verification" content="7P5vN6uWoUGcH5s87W0Vx2JnWZAUpKZtYo12iCVa01o">
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Apple Home Icons -->
+<link href="http://embed.ly/static/images/apple-touch-icon-144x144.png?v=5d8bb" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="http://embed.ly/static/images/apple-touch-icon-114x114.png?v=9aa5e" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="http://embed.ly/static/images/apple-touch-icon-72x72.png?v=63693" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="http://embed.ly/static/images/apple-touch-icon.png?v=620ce" rel="apple-touch-icon-precomposed apple-touch-icon">
+
+<!-- Meta Language tags -->
+<link rel="alternate" hreflang="en" href="./Keywords   Embedly_files/Keywords   Embedly.html">
+<link rel="alternate" hreflang="de" href="http://de.embed.ly/docs/api/extract/features/keywords">
+<link rel="alternate" hreflang="tr" href="http://tr.embed.ly/docs/api/extract/features/keywords">
+
+<title>Keywords | Embedly</title>
+<!-- Included CSS Files (Compressed) -->
+<link rel="stylesheet" href="http://embed.ly/static/styles/foundation.min.css?v=914fb">
+<link rel="stylesheet" href="http://embed.ly/static/styles/font-awesome.min.css?v=fa686">
+<link rel="stylesheet" href="http://embed.ly/static/styles/app.css?v=3ed9f">
+
+<link rel="stylesheet" href="http://embed.ly/static/styles/fontspring-stylesheet.css?v=5706c">
+
+<!-- Handle modern browswers with larger than 16px favicons -->
+<link rel="shortcut icon" href="http://embed.ly/static/images/favicon.ico?v=0b3ad">
+<link rel="icon" type="image/png" href="http://embed.ly/static/images/favicon.png?v=f1716">
+<script async="" src="./Keywords   Embedly_files/analytics.js"></script><script type="text/javascript" async="" src="./Keywords   Embedly_files/mixpanel-2.2.min.js"></script><script src="./Keywords   Embedly_files/modernizr.foundation.js"></script>
+
+<script src="./Keywords   Embedly_files/929012.js"></script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+'track_forms','register','register_once','unregister','identify','alias','name_tag','set_config',
+'people.set','people.set_once','people.increment','people.track_charge','people.append'];
+for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+
+mixpanel.init("74fd7100ab63464bded3829821256a34");
+
+mixpanel.track("pageviewed", {"location": window.location.toString()});
+</script>
+
+<meta property="st:title" content="Keywords">
+
+<style type="text/css"></style></head>
+<body class="">
+<!-- Header and Nav -->
+
+<header>
+<div class="row">
+<div class="three columns mobile-four">
+<a class="header-logo" href="http://embed.ly/" title="Home"><img src="./Keywords   Embedly_files/logo.png" alt="Embedly"></a>
+</div>
+<div class="nine columns mobile-four">
+<ul class="link-list right hide-for-small">
+<li><a href="http://embed.ly/products">Products</a></li>
+<li class="has-dropdown">
+<a href="http://embed.ly/api">API <i class="icon fa fa-chevron-down fa fa-white"></i></a>
+<ul class="dropdown">
+<li><a href="http://embed.ly/embed">
+<img src="./Keywords   Embedly_files/embed-icon-200-white.png" alt="Embed Icon White">
+<span>Embed</span>
+<p>The most powerful tool for embedding content into websites and apps</p>
+</a></li>
+<li class="divider"></li>
+<li><a href="http://embed.ly/extract">
+<img src="./Keywords   Embedly_files/extract-icon-200-white.png" alt="Extact Icon White">
+<span>Extract</span>
+<p> Extract elements from articles for smarter use in websites and apps </p>
+</a></li>
+<li class="divider"></li>
+<li><a href="http://embed.ly/display">
+<img src="./Keywords   Embedly_files/display-icon-200-white.png" alt="Display Icon White">
+<span>Display</span>
+<p>
+Resize and optimize images for better, faster display on websites and apps
+</p>
+</a></li>
+</ul>
+</li>
+<li><a href="http://embed.ly/docs">Docs</a></li>
+<li><a href="http://app.embed.ly/login">Login</a></li>
+</ul>
+</div>
+</div>
+</header>
+
+
+<!-- End Header and Nav -->
+
+<div class="row docs">
+<div class="twelve columns centered">
+<div class="row">
+<div class="two columns sub-nav">
+<ul class="unstyled block-grid one-up mobile-three-up">
+<li>
+<a href="http://embed.ly/docs">Documentation</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/search">Search</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api">API</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/api/embed">Embed</a></li>
+<li><a href="http://embed.ly/docs/api/extract">Extract</a></li>
+<li><a href="http://embed.ly/docs/api/display">Display</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/products">Products</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/products/cards">Cards</a></li>
+<li><a href="http://embed.ly/docs/products/button">Button</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/analytics">Analytics</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/analytics/install">Install</a></li>
+<li><a href="http://embed.ly/docs/analytics/faq">FAQ</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api/tutorials">Tutorials</a>
+<ul class="hide-for-small">
+<li><a href="http://embed.ly/docs/tutorials/inline">Inline</a></li>
+<li><a href="http://embed.ly/docs/tutorials/modal">Modal</a></li>
+<li><a href="http://embed.ly/docs/tutorials/tooltips">Tooltips</a></li>
+<li><a href="http://embed.ly/docs/tutorials/quilt">Crop Images</a></li>
+<li><a href="http://embed.ly/docs/tutorials/comments">Comments</a></li>
+<li><a href="http://embed.ly/docs/tutorials/status">Status Update</a></li>
+<li><a href="http://embed.ly/docs/tutorials/search">Search</a></li>
+<li><a href="http://embed.ly/docs/tutorials/colors">Colors Filter</a></li>
+<li><a href="http://embed.ly/docs/tutorials/article">Article</a></li>
+<li><a href="http://embed.ly/docs/tutorials/background">Color Placeholder</a></li>
+<li><a href="http://embed.ly/docs/tutorials/gif">Play and Stop GIFs</a></li>
+<li><a href="http://embed.ly/docs/tutorials/responsive">Responsive Embeds</a></li>
+</ul>
+</li>
+<li>
+<a href="http://embed.ly/docs/api/libraries">Libraries</a>
+</li>
+</ul>
+
+</div>
+<div class="ten columns docs-content">
+
+<div>
+<div class="apibody" id="keywords">
+<h1><a href="http://embed.ly/docs/api/extract/features/keywords#keywords">Keywords</a></h1>
+<p>The <tt class="docutils literal"><span class="pre">keywords</span></tt> object gives you a list of ranked keywords
+extracted from the article or blog text of a URL.
+This is different from the meta keywords defined by the page.
+Embedly uses its own ranking system to determine
+which keywords are the most relevant. You can find this data in the
+<a class="reference internal" href="http://embed.ly/docs/api/extract/endpoints/1/extract">Extract</a> endpoint.</p>
+<div class="section" id="example">
+<h2><a href="http://embed.ly/docs/api/extract/features/keywords#example">Example</a></h2>
+<p>An example <tt class="docutils literal"><span class="pre">keywords</span></tt> value
+for an <a class="reference external" href="http://embed.ly/docs/explore/objectify?url=http%3A%2F%2Farstechnica.com%2Ftech-policy%2F2013%2F02%2Fjudge-upholds-facetime-patent-verdict-against-apple-orders-royalties-to-boot%2F">Article</a> would be:</p>
+<div class="highlight-json"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">"keywords"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></li><li class="L1"><span class="pln">    </span><span class="pun">{</span></li><li class="L2"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">120</span><span class="pun">,</span></li><li class="L3"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"virnetx"</span></li><li class="L4"><span class="pln">    </span><span class="pun">},</span></li><li class="L5"><span class="pln">    </span><span class="pun">{</span></li><li class="L6"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">59</span><span class="pun">,</span></li><li class="L7"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"apple"</span></li><li class="L8"><span class="pln">    </span><span class="pun">},</span></li><li class="L9"><span class="pln">    </span><span class="pun">{</span></li><li class="L0"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">39</span><span class="pun">,</span></li><li class="L1"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"royalty"</span></li><li class="L2"><span class="pln">    </span><span class="pun">},</span></li><li class="L3"><span class="pln">    </span><span class="pun">{</span></li><li class="L4"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">23</span><span class="pun">,</span></li><li class="L5"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"patents"</span></li><li class="L6"><span class="pln">    </span><span class="pun">},</span></li><li class="L7"><span class="pln">    </span><span class="pun">{</span></li><li class="L8"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20</span><span class="pun">,</span></li><li class="L9"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"facetime"</span></li><li class="L0"><span class="pln">    </span><span class="pun">},</span></li><li class="L1"><span class="pln">    </span><span class="pun">{</span></li><li class="L2"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20</span><span class="pun">,</span></li><li class="L3"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"soverain"</span></li><li class="L4"><span class="pln">    </span><span class="pun">},</span></li><li class="L5"><span class="pln">    </span><span class="pun">{</span></li><li class="L6"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20</span><span class="pun">,</span></li><li class="L7"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"court"</span></li><li class="L8"><span class="pln">    </span><span class="pun">},</span></li><li class="L9"><span class="pln">    </span><span class="pun">{</span></li><li class="L0"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">18</span><span class="pun">,</span></li><li class="L1"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"damages"</span></li><li class="L2"><span class="pln">    </span><span class="pun">},</span></li><li class="L3"><span class="pln">    </span><span class="pun">{</span></li><li class="L4"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">18</span><span class="pun">,</span></li><li class="L5"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"vpn"</span></li><li class="L6"><span class="pln">    </span><span class="pun">},</span></li><li class="L7"><span class="pln">    </span><span class="pun">{</span></li><li class="L8"><span class="pln">        </span><span class="str">"score"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">16</span><span class="pun">,</span></li><li class="L9"><span class="pln">        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"cisco"</span></li><li class="L0"><span class="pln">    </span><span class="pun">}]</span></li></ol></pre>
+</div>
+</div>
+<div class="section" id="response">
+<h2><a href="http://embed.ly/docs/api/extract/features/keywords#response">Response</a></h2>
+<dl class="docutils"><dt><tt class="docutils literal"><span class="pre">name</span></tt></dt>
+<dd>Name of the keyword.</dd>
+<dt><tt class="docutils literal"><span class="pre">score</span></tt></dt>
+<dd>Score of the keyword from the article, larger numbers infer more relevance.</dd>
+</dl></div>
+</div>
+</div>
+
+</div>
+<!--<div class="two columns">
+<ul class='right-nav unstyled hide-for-small'>
+</ul>
+</div>-->
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+<div class="row collapse">
+<div class="three columns mobile-two">
+<img class="footer-logo" src="./Keywords   Embedly_files/footer-logo.png" alt="Embedly Footer Logo">
+<p class="copyright">©2014 All Rights Reserved</p>
+</div>
+<div class="eight offset-by-one columns mobile-two">
+<dl class="sub-nav hide-for-small">
+<dt>Product:</dt>
+<dd><a href="http://embed.ly/products">Products</a></dd>
+<dd><a href="http://embed.ly/embed/features/providers">Providers</a></dd>
+<dd><a href="http://embed.ly/legal/customer">Customer Service</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Documentation:</dt>
+<dd><a href="http://embed.ly/docs/overview">Overview</a></dd>
+<dd><a href="http://embed.ly/docs/apis">APIs</a></dd>
+<dd><a href="http://embed.ly/docs/tutorials">Tutorials</a></dd>
+<dd><a href="http://embed.ly/docs/faq">FAQs</a></dd>
+<dd><a href="http://support.embed.ly/">Support</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Company:</dt>
+<dd><a href="http://embed.ly/company">About Embedly</a></dd>
+<dd><a href="http://blog.embed.ly/">Blog</a></dd>
+<dd><a href="http://embed.ly/company/jobs">Jobs</a></dd>
+<dd><a href="http://embed.ly/company/press">Press</a></dd>
+<dd><a href="http://embed.ly/company/contact">Contact Us</a></dd>
+<dd><a href="http://embed.ly/legal">Legal</a></dd>
+</dl>
+<dl class="sub-nav hide-for-small">
+<dt>Follow Us:</dt>
+<dd><a target="_blank" href="http://twitter.com/embedly"><i class="fa fa-twitter"></i> Twitter</a></dd>
+<dd><a target="_blank" href="http://www.facebook.com/embedly"><i class="fa fa-facebook"></i> Facebook</a></dd>
+<dd><a target="_blank" href="https://plus.google.com/107130838673680519337"><i class="fa fa-google-plus"></i> Google+</a></dd>
+<dd><a target="_blank" href="http://www.github.com/embedly"><i class="fa fa-github-alt"></i> gitHub</a></dd>
+<!-- blame FontAwesome for not having a Quora icon -->
+<!--<dd><a target="_blank" href="http://www.quora.com/Embedly">Quora</a></dd>-->
+</dl>
+<ul class="show-for-small">
+<li><a href="http://embed.ly/products">Products</a></li>
+<li><a href="http://embed.ly/docs">Documentation</a></li>
+<li><a href="http://app.embed.ly/login">Login</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+<!-- Included JS Files (Compressed) -->
+<script src="./Keywords   Embedly_files/jquery.js"></script>
+<script src="./Keywords   Embedly_files/foundation.min.js"></script>
+<script>var gaID = 'UA-15045445-1';</script>
+<!-- Initialize JS Plugins -->
+<script src="./Keywords   Embedly_files/app.js"></script>
+<script src="./Keywords   Embedly_files/utils.js"></script>
+<script src="./Keywords   Embedly_files/tracking.js"></script>
+<script src="./Keywords   Embedly_files/jquery.embedly-3.1.1.min.js"></script>
+<script src="./Keywords   Embedly_files/sprintf-0.7-beta1.js"></script>
+<script src="./Keywords   Embedly_files/prettify.js"></script>
+<script src="./Keywords   Embedly_files/colors.js"></script>
+<script src="./Keywords   Embedly_files/gifs.js"></script>
+<script src="./Keywords   Embedly_files/platform.js"></script>
+<script src="./Keywords   Embedly_files/embed-code-modal.js"></script>
+
+<script type="text/javascript">
+// Sets up the default key for the jQuery Plugin.
+$.embedly.defaults.key = '92b31102528511e1a2ec4040d3dc5c07';
+</script>
+
+<!-- Files for autocomplete and search -->
+<script src="./Keywords   Embedly_files/jquery.swiftype.autocomplete.js"></script>
+<script src="./Keywords   Embedly_files/jquery.ba-hashchange.min.js"></script>
+<script src="./Keywords   Embedly_files/jquery.swiftype.search.js"></script>
+<script src="./Keywords   Embedly_files/search.js"></script>
+<script src="./Keywords   Embedly_files/docs.js"></script>
+
+
+
+<script type="text/javascript">
+tracker.page = "docs"
+tracker.product = null
+tracker.path = "/docs/api/extract/features/keywords"
+</script>
+
+
+</body></html>
