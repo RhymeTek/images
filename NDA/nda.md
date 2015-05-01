@@ -14,6 +14,7 @@ or
 In consideration of my employment by **`project_name`**, I, the undersigned employee, hereby agree to the terms of this agreement (the “Agreement”): 
 
 1. CONFIDENTIAL INFORMATION
+
   1. Company Information.  
   I agree at all times during the term of my employment and for a period of three years thereafter, to hold in strictest confidence, and not to use, except for the benefit of the `project_name`, or to disclose to any person, firm or corporation without written authorization of the Company, any Confidential Information of the Company.I understand that “Confidential Information” means any Company proprietary information, trade secrets or know-how, including, but not limited to, research, product plans, products, services, customer lists, markets, software, device, materials, samples, documents, graphics, specifications, technical information,  developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing, finances or any other information, collectively referred to as “Confidential Information”, disclosed to me by the `project_name` either directly or indirectly.
 
