@@ -40,15 +40,8 @@ In consideration of my employment by **`project_name`**, I, the undersigned empl
   Whenever possible, each provision of this Agreement will be interpreted in such manner as to be effective and valid under applicable law, but if any provision of this Agreement is held to be invalid, illegal or unenforceable in any respect under any applicable law or rule in any jurisdiction, such invalidity, illegality or unenforceability will not affect any other provision or any other jurisdiction, but this agreement will be reformed, construed and enforced in such jurisdiction as if such invalid, illegal or unenforceable provisions had never been contained herein.
 
 
+**The Recipient:**
 
-
-..................  
-
-**The Recipient**
-
-
-..................  
-
-**The Discloser**
+**The Discloser:**
 
 **CONFIDENTIAL**
