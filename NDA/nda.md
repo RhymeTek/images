@@ -7,8 +7,7 @@ located at `company_address` (hereinafter referred to as “`project_name`”) *
 
 and
 
-Name: `full_name` of Employment No. `X0123`. **(the Discloser)**
-or
+Name: `full_name` of Employment No. `X0123`. **(the Discloser)**  
 `full_name` Passport no, `X0123456`, addresses at `full_address` **(the Discloser)**
 
 In consideration of my employment by **`project_name`**, I, the undersigned employee, hereby agree to the terms of this agreement (the “Agreement”): 
@@ -16,7 +15,7 @@ In consideration of my employment by **`project_name`**, I, the undersigned empl
 1. CONFIDENTIAL INFORMATION
 
   1. Company Information.  
-  I agree at all times during the term of my employment and for a period of three years thereafter, to hold in strictest confidence, and not to use, except for the benefit of the `project_name`, or to disclose to any person, firm or corporation without written authorization of the Company, any Confidential Information of the Company.I understand that “Confidential Information” means any Company proprietary information, trade secrets or know-how, including, but not limited to, research, product plans, products, services, customer lists, markets, software, device, materials, samples, documents, graphics, specifications, technical information,  developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing, finances or any other information, collectively referred to as “Confidential Information”, disclosed to me by the `project_name` either directly or indirectly.
+  I agree at all times during the term of my employment and for a period of three years thereafter, to hold in strictest confidence, and not to use, except for the benefit of the `project_name`, or to disclose to any person, firm or corporation without written authorization of the Company, any Confidential Information of the Company. I understand that “Confidential Information” means any Company proprietary information, trade secrets or know-how, including, but not limited to, research, product plans, products, services, customer lists, markets, software, device, materials, samples, documents, graphics, specifications, technical information,  developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing, finances or any other information, collectively referred to as “Confidential Information”, disclosed to me by the `project_name` either directly or indirectly.
 
   2. Former Employment Information.  
   I agree during my employment with the `project_name`, not to improperly use or disclose any proprietary information or trade secrets of any former or concurrent employer or other person or entity and not bring onto the premises of `project_name` any unpublished document or proprietary information belonging to any such employer, person or entity unless consented to in writing by such employer, person or entity.
