@@ -8,7 +8,7 @@ located at `company_address` (hereinafter referred to as “`project_name`”) *
 and
 
 Name: `full_name` of Employment No. `X0123`. **(the Discloser)**  
-`full_name` Passport no, `X0123456`, addresses at `full_address` **(the Discloser)**
+`full_name`, Passport no: `X0123456`, addresses at `full_address` **(the Discloser)**
 
 In consideration of my employment by **`project_name`**, I, the undersigned employee, hereby agree to the terms of this agreement (the “Agreement”): 
 
@@ -21,11 +21,11 @@ In consideration of my employment by **`project_name`**, I, the undersigned empl
   I agree during my employment with the `project_name`, not to improperly use or disclose any proprietary information or trade secrets of any former or concurrent employer or other person or entity and not bring onto the premises of `project_name` any unpublished document or proprietary information belonging to any such employer, person or entity unless consented to in writing by such employer, person or entity.
 
   3. Third Party Information.  
-  I recognize that `project_name` has received and in the future will receive from third parties their confidential or proprietary information subject to a duty on `project_name’s` part to maintain the confidentiality of such information and to use it only for certain limited purposes.I agree to hold all such confidential or proprietary information in the strictest confidence and not to disclose it to any person, firm or corporation or to use it except as necessary in carrying out my work for `project_name` consistent with the Company’s agreement with such third party.
+  I recognize that `project_name` has received and in the future will receive from third parties their confidential or proprietary information subject to a duty on `project_name`’s part to maintain the confidentiality of such information and to use it only for certain limited purposes.I agree to hold all such confidential or proprietary information in the strictest confidence and not to disclose it to any person, firm or corporation or to use it except as necessary in carrying out my work for `project_name` consistent with the Company’s agreement with such third party.
 
 2. RETURN OF PROPERTY
 
-  Upon termination of my employment, I will return to `project_name`, retaining no copies or notes, all documents relating to the Company’s business including, but not limited to, reports, abstracts, lists, correspondence, information, computer files, computer disks, and all other materials and all copies of such material or any other property, collectively referred to as “`project_name’s` Assets”, obtained by me during my employment with the Company.
+  Upon termination of my employment, I will return to `project_name`, retaining no copies or notes, all documents relating to the Company’s business including, but not limited to, reports, abstracts, lists, correspondence, information, computer files, computer disks, and all other materials and all copies of such material or any other property, collectively referred to as “`project_name`’s Assets”, obtained by me during my employment with the Company.
 
 3. LEGAL AND EQUITABLE REMEDIES
 
