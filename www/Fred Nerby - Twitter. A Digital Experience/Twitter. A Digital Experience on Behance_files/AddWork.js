@@ -1,1 +1,0 @@
-define(["be/Controller/Dialog/Roulette","be/View/Menu/AddWork"],function(e,t){"use strict";var n=e.extend({},{VIEW_CLASS:{desktop:t}});return n});
